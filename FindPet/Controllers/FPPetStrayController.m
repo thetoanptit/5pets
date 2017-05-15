@@ -9,6 +9,7 @@
 #import <XLPagerTabStrip/XLPagerTabStripViewController.h>
 
 #import "FPPetStrayController.h"
+#import "Logging.h"
 
 @interface FPPetStrayController ()<XLPagerTabStripChildItem>
 

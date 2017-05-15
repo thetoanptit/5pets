@@ -10,6 +10,7 @@
 
 #import "FPBoothController.h"
 #import "FPMenuCell.h"
+#import "Logging.h"
 
 @interface FPBoothController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -21,41 +22,53 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    LogTrace(@"IN");
     [self configUI];
+    
+    LogDebug(@"OUT");
 }
 
-- (void)configUI {    
+- (void)configUI {
+    LogTrace(@"IN");
     self.tableView.tableFooterView = [UIView new];
     [self.tableView registerNib:[UINib nibWithNibName:kFPMenuCellIdentifier bundle:nil] forCellReuseIdentifier:kFPMenuCellIdentifier];
+    LogDebug(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
+    LogDebug(@"OUT");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
+    LogTrace(@"IN-OUT");
     return UIStatusBarStyleLightContent;
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    LogTrace(@"IN-OUT");
     return 5;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN-OUT");
     return 50.0f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN");
     FPMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:kFPMenuCellIdentifier forIndexPath:indexPath];
     [self configCell:cell forIndexPath:indexPath];
+    LogDebug(@"OUT");
     return cell;
 }
 
 - (void)configCell:(FPMenuCell *)cell forIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN");
     FAKIcon *icon;
     NSString *title;
     switch (indexPath.row) {
@@ -96,6 +109,7 @@
     }
 
     cell.label.text = title;
+    LogDebug(@"OUT");
 }
 /*
 #pragma mark - Navigation

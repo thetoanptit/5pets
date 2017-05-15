@@ -13,6 +13,7 @@
 #import "FPHomeController.h"
 #import "AppDelegate.h"
 #import "FPConstant.h"
+#import "Logging.h"
 
 @interface FPHomeController ()
 
@@ -22,22 +23,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    LogTrace(@"IN");
     [self configUI];
+    LogDebug(@"OUT");
 }
     
 
 - (void)didReceiveMemoryWarning {
+    LogTrace(@"IN");
     [super didReceiveMemoryWarning];
-    
+    LogDebug(@"OUT");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
+    LogTrace(@"IN");
+    LogDebug(@"OUT");
     return UIStatusBarStyleLightContent;
 }
 
 - (void)configUI {
-    
+    LogTrace(@"IN");
     self.title = @"Tin tức";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
@@ -77,25 +82,31 @@
             oldCell.transform = CGAffineTransformMakeScale(0.8, 0.8);
         }
     };
+    LogDebug(@"OUT");
 }
 
 - (void)onMenuButtonTapped {
+    LogTrace(@"IN");
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    LogDebug(@"OUT");
     
 }
 
 - (void)onSearchButtonTapped {
-
+    LogTrace(@"IN");
+    LogDebug(@"OUT");
 }
 
 #pragma mark - XLPagerTabStripViewControllerDelegate, XLPagerTabStripViewControllerDataSource
 
 - (NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
+    LogTrace(@"IN");
     UIStoryboard *storyboard = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).mainStoryBoard;
     UIViewController *newController = [storyboard instantiateViewControllerWithIdentifier:@"FPNewController"];
     UIViewController *topLikeController = [storyboard instantiateViewControllerWithIdentifier:@"FPTopLikeController"];
     UIViewController *topShareController = [storyboard instantiateViewControllerWithIdentifier:@"FPTopShareController"];
     UIViewController *petStrayController = [storyboard instantiateViewControllerWithIdentifier:@"FPPetStrayController"];
+    LogDebug(@"OUT");
     return @[newController, topLikeController, topShareController, petStrayController];
 }
 

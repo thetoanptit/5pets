@@ -8,6 +8,7 @@
 
 #import "FPListPetController.h"
 #import "FPPetCell.h"
+#import "Logging.h"
 
 @interface FPListPetController ()<UITableViewDataSource, UITableViewDelegate>
 

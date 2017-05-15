@@ -10,6 +10,7 @@
 
 #import "FPLeftMenuController.h"
 #import "FPMenuCell.h"
+#import "Logging.h"
 
 @interface FPLeftMenuController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -23,16 +24,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    LogTrace(@"IN");
     [self configUI];
+    LogDebug(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
+    LogDebug(@"OUT");
 }
 
 - (void)configUI {
+    LogTrace(@"IN");
     self.tableView.tableFooterView = [UIView new];
     
     self.avataImageView.image = [UIImage imageNamed:@"bg"];
@@ -42,21 +47,26 @@
     self.avataImageView.layer.masksToBounds = YES;
     
     self.nameLabel.text = [@"Trần Mỹ Anh" uppercaseString];
+    LogDebug(@"OUT");
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    LogTrace(@"IN-OUT");
     return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN");
     FPMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:kFPMenuCellIdentifier forIndexPath:indexPath];
     [self configCell:cell forIndexPath:indexPath];
+    LogDebug(@"OUT");
     return cell;
 }
 
 - (void)configCell:(FPMenuCell *)cell forIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN");
     FAKIonIcons *icon;
     NSString *title;
     switch (indexPath.row) {
@@ -101,6 +111,7 @@
     [icon setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     cell.image.image = [icon imageWithSize:CGSizeMake(25, 25)];
     cell.label.text = title;
+    LogDebug(@"OUT");
 }
 
 /*

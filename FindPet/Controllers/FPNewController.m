@@ -13,6 +13,7 @@
 #import "FPNewController.h"
 #import "FPNewCell.h"
 #import "FPConstant.h"
+#import "Logging.h"
 
 @interface FPNewController ()<XLPagerTabStripChildItem, UITableViewDataSource, UITableViewDelegate>
 
