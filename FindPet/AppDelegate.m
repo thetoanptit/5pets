@@ -18,9 +18,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    self.window.rootViewController = self.drawerController;
-    
+//    // Override point for customization after application launch.
+//    self.window.rootViewController = self.drawerController;
+//    
     [[UINavigationBar appearance] setBarTintColor:FPBackgroundColor];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
@@ -66,17 +66,21 @@
         
         icon = [FAKIonIcons iosPeopleOutlineIconWithSize:25];
         UINavigationController *some = [[UINavigationController alloc] initWithRootViewController:[self.mainStoryBoard instantiateViewControllerWithIdentifier:@"FPSomeUsersController"]];
+        some.title = @"Người dùng quanh đây";
         some.tabBarItem.image = [icon imageWithSize:iconsize];
         
         icon = [FAKIonIcons iosBriefcaseOutlineIconWithSize:25];
         UINavigationController *booth = [[UINavigationController alloc] initWithRootViewController:[self.mainStoryBoard instantiateViewControllerWithIdentifier:@"FPBoothController"]];
+        booth.title = @"Gian hàng";
+
         booth.tabBarItem.image = [icon imageWithSize:iconsize];
         
         icon = [FAKIonIcons iosPawOutlineIconWithSize:25];
         
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"PetStoryboard" bundle:nil];
         UINavigationController *mypet = [storyboard instantiateInitialViewController];
-        
+        mypet.title = @"PET của tôi";
+
         mypet.tabBarItem.image = [icon imageWithSize:iconsize];
         
         _tabbarController = [[UITabBarController alloc] init];
@@ -97,6 +101,11 @@
     
     return _drawerController;
 }
+
+- (void) showHomeViewController {
+    self.window.rootViewController = self.drawerController;
+}
+
 
 - (UIStoryboard *)mainStoryBoard {
     if (!_mainStoryBoard) {

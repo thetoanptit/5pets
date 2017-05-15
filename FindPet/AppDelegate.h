@@ -16,5 +16,6 @@
 @property (nonatomic, strong) MMDrawerController *drawerController;
 @property (nonatomic, strong) UIStoryboard *mainStoryBoard;
 
+- (void) showHomeViewController;
 @end
 

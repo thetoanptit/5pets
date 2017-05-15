@@ -11,6 +11,7 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 #import "FPLoginController.h"
+#import "AppDelegate.h"
 
 @interface FPLoginController ()
 
@@ -75,6 +76,13 @@
     self.instagramButton.layer.masksToBounds = YES;
 
 }
+
+
+- (IBAction)loginButton_Clicked:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate showHomeViewController];
+}
+
 
 - (IBAction)onLoginWithFBButtonTapped:(UIButton *)sender {
     FBSDKLoginManager *fbLogin = [[FBSDKLoginManager alloc] init];

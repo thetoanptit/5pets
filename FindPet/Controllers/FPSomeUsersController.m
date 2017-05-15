@@ -21,7 +21,7 @@
 }
 
 - (void)configUI {
-    self.title = @"Người dùng quanh đây";
+
 }
 
 - (void)didReceiveMemoryWarning {

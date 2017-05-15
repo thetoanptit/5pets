@@ -25,9 +25,7 @@
     [self configUI];
 }
 
-- (void)configUI {
-    self.title = @"Gian hàng";
-    
+- (void)configUI {    
     self.tableView.tableFooterView = [UIView new];
     [self.tableView registerNib:[UINib nibWithNibName:kFPMenuCellIdentifier bundle:nil] forCellReuseIdentifier:kFPMenuCellIdentifier];
 }
