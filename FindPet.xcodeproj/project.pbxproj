@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		532BC9941E80D534004CF413 /* FPMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532BC9931E80D534004CF413 /* FPMenuCell.xib */; };
+		532BC9991E80EC59004CF413 /* FPListPetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532BC9981E80EC59004CF413 /* FPListPetController.m */; };
+		532BC99D1E80FBE8004CF413 /* FPPetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 532BC99B1E80FBE8004CF413 /* FPPetCell.m */; };
+		532BC99E1E80FBE8004CF413 /* FPPetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532BC99C1E80FBE8004CF413 /* FPPetCell.xib */; };
+		532BC9A01E81084F004CF413 /* PetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532BC99F1E81084F004CF413 /* PetStoryboard.storyboard */; };
+		532BC9A31E810A7E004CF413 /* FPScanBluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532BC9A21E810A7E004CF413 /* FPScanBluetoothController.m */; };
+		532BC9D01E811D83004CF413 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532BC9CC1E811D83004CF413 /* Bolts.framework */; };
+		532BC9D11E811D83004CF413 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532BC9CD1E811D83004CF413 /* FBSDKCoreKit.framework */; };
+		532BC9D21E811D83004CF413 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532BC9CE1E811D83004CF413 /* FBSDKLoginKit.framework */; };
+		532BC9D31E811D83004CF413 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532BC9CF1E811D83004CF413 /* FBSDKShareKit.framework */; };
+		53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53417D911E73EC2F00AD2337 /* FPHomeController.m */; };
+		53417D941E73F99D00AD2337 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53417D931E73F99D00AD2337 /* UIKit.framework */; };
+		53417D961E7400EC00AD2337 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53417D951E7400EC00AD2337 /* CoreBluetooth.framework */; };
+		5354B2621E7F951500B7000F /* FPLeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2611E7F951500B7000F /* FPLeftMenuController.m */; };
+		5354B2651E7FA90400B7000F /* FPMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2641E7FA90400B7000F /* FPMenuCell.m */; };
+		5354B2681E7FB96F00B7000F /* FPNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2671E7FB96F00B7000F /* FPNewController.m */; };
+		5354B26B1E7FB98A00B7000F /* FPTopLikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B26A1E7FB98A00B7000F /* FPTopLikeController.m */; };
+		5354B26E1E7FB99A00B7000F /* FPTopShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B26D1E7FB99A00B7000F /* FPTopShareController.m */; };
+		5354B2711E7FBA3400B7000F /* FPPetStrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2701E7FBA3400B7000F /* FPPetStrayController.m */; };
+		5354B2751E7FDC9200B7000F /* FPNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2741E7FDC9200B7000F /* FPNewCell.m */; };
+		53A775251E7D366F002F1437 /* FPSomeUsersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A775241E7D366F002F1437 /* FPSomeUsersController.m */; };
+		53A775281E7D36B6002F1437 /* FPBoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A775271E7D36B6002F1437 /* FPBoothController.m */; };
+		53A7752B1E7D36C4002F1437 /* FPMyPetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A7752A1E7D36C4002F1437 /* FPMyPetsController.m */; };
+		53AEBFC11E73E5970089E674 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBFC01E73E5970089E674 /* main.m */; };
+		53AEBFC41E73E5970089E674 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBFC31E73E5970089E674 /* AppDelegate.m */; };
+		53AEBFCA1E73E5970089E674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBFC81E73E5970089E674 /* Main.storyboard */; };
+		53AEBFCC1E73E5970089E674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBFCB1E73E5970089E674 /* Assets.xcassets */; };
+		53AEBFCF1E73E5970089E674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBFCD1E73E5970089E674 /* LaunchScreen.storyboard */; };
+		53DA07211E7A6C240092563A /* FPLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DA07201E7A6C240092563A /* FPLoginController.m */; };
+		CD195D837ADD66E5AEE8BFAC /* libPods-FindPet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28C2D760061AE42FB0F38A0A /* Pods-FindPet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindPet.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindPet/Pods-FindPet.release.xcconfig"; sourceTree = "<group>"; };
+		4192BD175514A3B34B2E07B1 /* Pods-FindPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindPet/Pods-FindPet.debug.xcconfig"; sourceTree = "<group>"; };
+		532BC9931E80D534004CF413 /* FPMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPMenuCell.xib; sourceTree = "<group>"; };
+		532BC9971E80EC59004CF413 /* FPListPetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPListPetController.h; sourceTree = "<group>"; };
+		532BC9981E80EC59004CF413 /* FPListPetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPListPetController.m; sourceTree = "<group>"; };
+		532BC99A1E80FBE8004CF413 /* FPPetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPetCell.h; sourceTree = "<group>"; };
+		532BC99B1E80FBE8004CF413 /* FPPetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPetCell.m; sourceTree = "<group>"; };
+		532BC99C1E80FBE8004CF413 /* FPPetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPPetCell.xib; sourceTree = "<group>"; };
+		532BC99F1E81084F004CF413 /* PetStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PetStoryboard.storyboard; sourceTree = "<group>"; };
+		532BC9A11E810A7E004CF413 /* FPScanBluetoothController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPScanBluetoothController.h; sourceTree = "<group>"; };
+		532BC9A21E810A7E004CF413 /* FPScanBluetoothController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPScanBluetoothController.m; sourceTree = "<group>"; };
+		532BC9CC1E811D83004CF413 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		532BC9CD1E811D83004CF413 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		532BC9CE1E811D83004CF413 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		532BC9CF1E811D83004CF413 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		53417D901E73EC2F00AD2337 /* FPHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPHomeController.h; sourceTree = "<group>"; };
+		53417D911E73EC2F00AD2337 /* FPHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPHomeController.m; sourceTree = "<group>"; };
+		53417D931E73F99D00AD2337 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53417D951E7400EC00AD2337 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		53417D971E7400FA00AD2337 /* FindPet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FindPet.entitlements; sourceTree = "<group>"; };
+		5354B2601E7F951500B7000F /* FPLeftMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLeftMenuController.h; sourceTree = "<group>"; };
+		5354B2611E7F951500B7000F /* FPLeftMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLeftMenuController.m; sourceTree = "<group>"; };
+		5354B2631E7FA90400B7000F /* FPMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMenuCell.h; sourceTree = "<group>"; };
+		5354B2641E7FA90400B7000F /* FPMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMenuCell.m; sourceTree = "<group>"; };
+		5354B2661E7FB96F00B7000F /* FPNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNewController.h; sourceTree = "<group>"; };
+		5354B2671E7FB96F00B7000F /* FPNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNewController.m; sourceTree = "<group>"; };
+		5354B2691E7FB98A00B7000F /* FPTopLikeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTopLikeController.h; sourceTree = "<group>"; };
+		5354B26A1E7FB98A00B7000F /* FPTopLikeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTopLikeController.m; sourceTree = "<group>"; };
+		5354B26C1E7FB99A00B7000F /* FPTopShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTopShareController.h; sourceTree = "<group>"; };
+		5354B26D1E7FB99A00B7000F /* FPTopShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTopShareController.m; sourceTree = "<group>"; };
+		5354B26F1E7FBA3400B7000F /* FPPetStrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPetStrayController.h; sourceTree = "<group>"; };
+		5354B2701E7FBA3400B7000F /* FPPetStrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPetStrayController.m; sourceTree = "<group>"; };
+		5354B2721E7FD53E00B7000F /* FPConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPConstant.h; sourceTree = "<group>"; };
+		5354B2731E7FDC9200B7000F /* FPNewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNewCell.h; sourceTree = "<group>"; };
+		5354B2741E7FDC9200B7000F /* FPNewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNewCell.m; sourceTree = "<group>"; };
+		53A775231E7D366F002F1437 /* FPSomeUsersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSomeUsersController.h; sourceTree = "<group>"; };
+		53A775241E7D366F002F1437 /* FPSomeUsersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSomeUsersController.m; sourceTree = "<group>"; };
+		53A775261E7D36B6002F1437 /* FPBoothController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPBoothController.h; sourceTree = "<group>"; };
+		53A775271E7D36B6002F1437 /* FPBoothController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPBoothController.m; sourceTree = "<group>"; };
+		53A775291E7D36C4002F1437 /* FPMyPetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMyPetsController.h; sourceTree = "<group>"; };
+		53A7752A1E7D36C4002F1437 /* FPMyPetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMyPetsController.m; sourceTree = "<group>"; };
+		53AEBFBC1E73E5970089E674 /* FindPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53AEBFC01E73E5970089E674 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53AEBFC21E73E5970089E674 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53AEBFC31E73E5970089E674 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53AEBFC91E73E5970089E674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53AEBFCB1E73E5970089E674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53AEBFCE1E73E5970089E674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53AEBFD01E73E5970089E674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DA071F1E7A6C240092563A /* FPLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLoginController.h; sourceTree = "<group>"; };
+		53DA07201E7A6C240092563A /* FPLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLoginController.m; sourceTree = "<group>"; };
+		5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FindPet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53AEBFB91E73E5970089E674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532BC9D11E811D83004CF413 /* FBSDKCoreKit.framework in Frameworks */,
+				53417D961E7400EC00AD2337 /* CoreBluetooth.framework in Frameworks */,
+				532BC9D21E811D83004CF413 /* FBSDKLoginKit.framework in Frameworks */,
+				532BC9D31E811D83004CF413 /* FBSDKShareKit.framework in Frameworks */,
+				53417D941E73F99D00AD2337 /* UIKit.framework in Frameworks */,
+				CD195D837ADD66E5AEE8BFAC /* libPods-FindPet.a in Frameworks */,
+				532BC9D01E811D83004CF413 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1284FB867044CD05340FA879 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53417D951E7400EC00AD2337 /* CoreBluetooth.framework */,
+				53417D931E73F99D00AD2337 /* UIKit.framework */,
+				5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */,
+				532BC9CC1E811D83004CF413 /* Bolts.framework */,
+				532BC9CD1E811D83004CF413 /* FBSDKCoreKit.framework */,
+				532BC9CE1E811D83004CF413 /* FBSDKLoginKit.framework */,
+				532BC9CF1E811D83004CF413 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53417D8B1E73EB6100AD2337 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53417D901E73EC2F00AD2337 /* FPHomeController.h */,
+				53417D911E73EC2F00AD2337 /* FPHomeController.m */,
+				53DA071F1E7A6C240092563A /* FPLoginController.h */,
+				53DA07201E7A6C240092563A /* FPLoginController.m */,
+				53A775231E7D366F002F1437 /* FPSomeUsersController.h */,
+				53A775241E7D366F002F1437 /* FPSomeUsersController.m */,
+				53A775261E7D36B6002F1437 /* FPBoothController.h */,
+				53A775271E7D36B6002F1437 /* FPBoothController.m */,
+				53A775291E7D36C4002F1437 /* FPMyPetsController.h */,
+				53A7752A1E7D36C4002F1437 /* FPMyPetsController.m */,
+				5354B2601E7F951500B7000F /* FPLeftMenuController.h */,
+				5354B2611E7F951500B7000F /* FPLeftMenuController.m */,
+				5354B2661E7FB96F00B7000F /* FPNewController.h */,
+				5354B2671E7FB96F00B7000F /* FPNewController.m */,
+				5354B2691E7FB98A00B7000F /* FPTopLikeController.h */,
+				5354B26A1E7FB98A00B7000F /* FPTopLikeController.m */,
+				5354B26C1E7FB99A00B7000F /* FPTopShareController.h */,
+				5354B26D1E7FB99A00B7000F /* FPTopShareController.m */,
+				5354B26F1E7FBA3400B7000F /* FPPetStrayController.h */,
+				5354B2701E7FBA3400B7000F /* FPPetStrayController.m */,
+				532BC9971E80EC59004CF413 /* FPListPetController.h */,
+				532BC9981E80EC59004CF413 /* FPListPetController.m */,
+				532BC9A11E810A7E004CF413 /* FPScanBluetoothController.h */,
+				532BC9A21E810A7E004CF413 /* FPScanBluetoothController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		53417D8C1E73EB6E00AD2337 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5354B2631E7FA90400B7000F /* FPMenuCell.h */,
+				5354B2641E7FA90400B7000F /* FPMenuCell.m */,
+				532BC9931E80D534004CF413 /* FPMenuCell.xib */,
+				5354B2731E7FDC9200B7000F /* FPNewCell.h */,
+				5354B2741E7FDC9200B7000F /* FPNewCell.m */,
+				532BC99A1E80FBE8004CF413 /* FPPetCell.h */,
+				532BC99B1E80FBE8004CF413 /* FPPetCell.m */,
+				532BC99C1E80FBE8004CF413 /* FPPetCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53AEBFB31E73E5970089E674 = {
+			isa = PBXGroup;
+			children = (
+				53AEBFBE1E73E5970089E674 /* FindPet */,
+				53AEBFBD1E73E5970089E674 /* Products */,
+				EEC38147312FC9D9E9BB8841 /* Pods */,
+				1284FB867044CD05340FA879 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53AEBFBD1E73E5970089E674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53AEBFBC1E73E5970089E674 /* FindPet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53AEBFBE1E73E5970089E674 /* FindPet */ = {
+			isa = PBXGroup;
+			children = (
+				53417D971E7400FA00AD2337 /* FindPet.entitlements */,
+				53AEBFC21E73E5970089E674 /* AppDelegate.h */,
+				53AEBFC31E73E5970089E674 /* AppDelegate.m */,
+				53AEBFCB1E73E5970089E674 /* Assets.xcassets */,
+				53AEBFCD1E73E5970089E674 /* LaunchScreen.storyboard */,
+				53AEBFD01E73E5970089E674 /* Info.plist */,
+				53417D8C1E73EB6E00AD2337 /* Views */,
+				53DF45E41E7AA0D40099E884 /* Helpers */,
+				53417D8B1E73EB6100AD2337 /* Controllers */,
+				53AEBFBF1E73E5970089E674 /* Supporting Files */,
+				53AEBFC81E73E5970089E674 /* Main.storyboard */,
+				532BC99F1E81084F004CF413 /* PetStoryboard.storyboard */,
+			);
+			path = FindPet;
+			sourceTree = "<group>";
+		};
+		53AEBFBF1E73E5970089E674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53AEBFC01E73E5970089E674 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53DF45E41E7AA0D40099E884 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5354B2721E7FD53E00B7000F /* FPConstant.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EEC38147312FC9D9E9BB8841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4192BD175514A3B34B2E07B1 /* Pods-FindPet.debug.xcconfig */,
+				28C2D760061AE42FB0F38A0A /* Pods-FindPet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53AEBFBB1E73E5970089E674 /* FindPet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53AEBFD31E73E5970089E674 /* Build configuration list for PBXNativeTarget "FindPet" */;
+			buildPhases = (
+				C6E00C7A78A8E80FB8695CA9 /* [CP] Check Pods Manifest.lock */,
+				53AEBFB81E73E5970089E674 /* Sources */,
+				53AEBFB91E73E5970089E674 /* Frameworks */,
+				53AEBFBA1E73E5970089E674 /* Resources */,
+				763400BEB1737C6493A02962 /* [CP] Embed Pods Frameworks */,
+				E9845ACBE37616722E83DC4B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindPet;
+			productName = FindPet;
+			productReference = 53AEBFBC1E73E5970089E674 /* FindPet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53AEBFB41E73E5970089E674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FP;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = tungnd;
+				TargetAttributes = {
+					53AEBFBB1E73E5970089E674 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MQAGCVCE9F;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 53AEBFB71E73E5970089E674 /* Build configuration list for PBXProject "FindPet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53AEBFB31E73E5970089E674;
+			productRefGroup = 53AEBFBD1E73E5970089E674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53AEBFBB1E73E5970089E674 /* FindPet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53AEBFBA1E73E5970089E674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532BC99E1E80FBE8004CF413 /* FPPetCell.xib in Resources */,
+				532BC9A01E81084F004CF413 /* PetStoryboard.storyboard in Resources */,
+				53AEBFCF1E73E5970089E674 /* LaunchScreen.storyboard in Resources */,
+				53AEBFCC1E73E5970089E674 /* Assets.xcassets in Resources */,
+				532BC9941E80D534004CF413 /* FPMenuCell.xib in Resources */,
+				53AEBFCA1E73E5970089E674 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		763400BEB1737C6493A02962 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindPet/Pods-FindPet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E00C7A78A8E80FB8695CA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9845ACBE37616722E83DC4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindPet/Pods-FindPet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53AEBFB81E73E5970089E674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */,
+				5354B26E1E7FB99A00B7000F /* FPTopShareController.m in Sources */,
+				53A7752B1E7D36C4002F1437 /* FPMyPetsController.m in Sources */,
+				53DA07211E7A6C240092563A /* FPLoginController.m in Sources */,
+				532BC9A31E810A7E004CF413 /* FPScanBluetoothController.m in Sources */,
+				5354B2621E7F951500B7000F /* FPLeftMenuController.m in Sources */,
+				532BC99D1E80FBE8004CF413 /* FPPetCell.m in Sources */,
+				53A775281E7D36B6002F1437 /* FPBoothController.m in Sources */,
+				53A775251E7D366F002F1437 /* FPSomeUsersController.m in Sources */,
+				53AEBFC41E73E5970089E674 /* AppDelegate.m in Sources */,
+				5354B2711E7FBA3400B7000F /* FPPetStrayController.m in Sources */,
+				5354B26B1E7FB98A00B7000F /* FPTopLikeController.m in Sources */,
+				53AEBFC11E73E5970089E674 /* main.m in Sources */,
+				532BC9991E80EC59004CF413 /* FPListPetController.m in Sources */,
+				5354B2681E7FB96F00B7000F /* FPNewController.m in Sources */,
+				5354B2751E7FDC9200B7000F /* FPNewCell.m in Sources */,
+				5354B2651E7FA90400B7000F /* FPMenuCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53AEBFC81E73E5970089E674 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53AEBFC91E73E5970089E674 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53AEBFCD1E73E5970089E674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53AEBFCE1E73E5970089E674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53AEBFD11E73E5970089E674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		53AEBFD21E73E5970089E674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53AEBFD41E73E5970089E674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4192BD175514A3B34B2E07B1 /* Pods-FindPet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MQAGCVCE9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FindPet/FacebookSDKs-iOS",
+				);
+				INFOPLIST_FILE = FindPet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9fac783d-172f-47d4-8762-7f6d26dc6aed";
+				PROVISIONING_PROFILE_SPECIFIER = "KVMobile Development Apps Profile";
+			};
+			name = Debug;
+		};
+		53AEBFD51E73E5970089E674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C2D760061AE42FB0F38A0A /* Pods-FindPet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MQAGCVCE9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FindPet/FacebookSDKs-iOS",
+				);
+				INFOPLIST_FILE = FindPet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9fac783d-172f-47d4-8762-7f6d26dc6aed";
+				PROVISIONING_PROFILE_SPECIFIER = "KVMobile Development Apps Profile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53AEBFB71E73E5970089E674 /* Build configuration list for PBXProject "FindPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53AEBFD11E73E5970089E674 /* Debug */,
+				53AEBFD21E73E5970089E674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53AEBFD31E73E5970089E674 /* Build configuration list for PBXNativeTarget "FindPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53AEBFD41E73E5970089E674 /* Debug */,
+				53AEBFD51E73E5970089E674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53AEBFB41E73E5970089E674 /* Project object */;
+}

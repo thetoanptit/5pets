@@ -1,0 +1,106 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - DZNEmptyDataSet (1.8.1)
+  - FontAwesomeKit (2.2.1):
+    - FontAwesomeKit/Core (= 2.2.1)
+    - FontAwesomeKit/FontAwesome (= 2.2.1)
+    - FontAwesomeKit/FoundationIcons (= 2.2.1)
+    - FontAwesomeKit/IonIcons (= 2.2.1)
+    - FontAwesomeKit/Material (= 2.2.1)
+    - FontAwesomeKit/Octicons (= 2.2.1)
+    - FontAwesomeKit/Zocial (= 2.2.1)
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Material (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Octicons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.1):
+    - FontAwesomeKit/Core
+  - LSBLEManager (1.0.0)
+  - Masonry (1.0.2)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
+  - Realm (2.4.4):
+    - Realm/Headers (= 2.4.4)
+  - Realm/Headers (2.4.4)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - STPopup (1.8.2)
+  - SVProgressHUD (2.1.2)
+  - SVPullToRefresh (0.4.1)
+  - UITextView+Placeholder (1.2.0)
+  - XLPagerTabStrip (3.0.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - DZNEmptyDataSet
+  - FontAwesomeKit (from `https://github.com/PrideChung/FontAwesomeKit.git`)
+  - LSBLEManager (~> 1.0.0)
+  - Masonry
+  - MMDrawerController
+  - Realm
+  - SDWebImage
+  - STPopup
+  - SVProgressHUD
+  - SVPullToRefresh
+  - UITextView+Placeholder (~> 1.2)
+  - XLPagerTabStrip (~> 3.0)
+
+EXTERNAL SOURCES:
+  FontAwesomeKit:
+    :git: https://github.com/PrideChung/FontAwesomeKit.git
+
+CHECKOUT OPTIONS:
+  FontAwesomeKit:
+    :commit: ed5eb02f4bcf76e218bb1c966c551a7b5240b6b4
+    :git: https://github.com/PrideChung/FontAwesomeKit.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
+  LSBLEManager: 9ea1dd592ad6c6663a7f396964170f6dc7614ae9
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  STPopup: b69b3e7484ef7d2baec5f9ab2939f8a7bcdfe218
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
+  XLPagerTabStrip: 0f9f94246c84e7cb60a06ca435da68ac75c8b56e
+
+PODFILE CHECKSUM: 997fa6ee3ea2133da5e3df5a7cf6a0c4ac08f4d9
+
+COCOAPODS: 1.2.0
