@@ -7,6 +7,7 @@
 //
 
 #import "FPScanBluetoothController.h"
+#import "Logging.h"
 
 @interface FPScanBluetoothController ()<UITableViewDataSource, UITableViewDelegate>
 

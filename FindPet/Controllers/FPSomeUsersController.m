@@ -7,6 +7,7 @@
 //
 
 #import "FPSomeUsersController.h"
+#import "Logging.h"
 
 @interface FPSomeUsersController ()
 
@@ -16,20 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    LogTrace(@"IN");
     [self configUI];
+    
+    LogDebug(@"OUT");
 }
 
 - (void)configUI {
-    self.title = @"Người dùng quanh đây";
+    LogTrace(@"IN");
+    
+    LogDebug(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
+    
+    LogDebug(@"OUT");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
+    LogTrace(@"IN-OUT");
     return UIStatusBarStyleLightContent;
 }
 

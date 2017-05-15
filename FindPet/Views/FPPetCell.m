@@ -10,12 +10,13 @@
 
 #import "FPPetCell.h"
 #import "FPConstant.h"
+#import "Logging.h"
 
 @implementation FPPetCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+    LogTrace(@"IN");
     self.pictureImage.layer.borderColor = FPBackgroundColor.CGColor;
     FAKIonIcons *icon = [FAKIonIcons iosLocationIconWithSize:25];
     [icon setAttributes:@{NSForegroundColorAttributeName:FPBackgroundColor}];
@@ -24,6 +25,7 @@
     icon = [FAKIonIcons iosPawIconWithSize:25];
     [icon setAttributes:@{NSForegroundColorAttributeName:FPBackgroundColor}];
     self.pawImage.image = [icon imageWithSize:CGSizeMake(25, 25)];
+    LogDebug(@"OUT");
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

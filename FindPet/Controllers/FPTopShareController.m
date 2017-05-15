@@ -9,6 +9,7 @@
 #import <XLPagerTabStrip/XLPagerTabStripViewController.h>
 
 #import "FPTopShareController.h"
+#import "Logging.h"
 
 @interface FPTopShareController ()<XLPagerTabStripChildItem>
 

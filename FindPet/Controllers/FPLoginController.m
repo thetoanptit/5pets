@@ -11,6 +11,9 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 #import "FPLoginController.h"
+#import "AppDelegate.h"
+#import <AFNetworking.h>
+#import "Logging.h"
 
 @interface FPLoginController ()
 
@@ -27,17 +30,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    LogTrace(@"IN");
     [self configUI];
     // Do any additional setup after loading the view.
+    
+    LogDebug(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
+    
+    LogDebug(@"OUT");
 }
 
 - (void)configUI {
+    LogTrace(@"IN");
     self.usernameTextField.layer.borderColor = [UIColor whiteColor].CGColor;
     self.usernameTextField.layer.borderWidth = 1.0f;
     self.usernameTextField.layer.masksToBounds = YES;
@@ -74,9 +83,33 @@
     self.instagramButton.layer.borderColor = [UIColor whiteColor].CGColor;
     self.instagramButton.layer.masksToBounds = YES;
 
+    LogDebug(@"OUT");
 }
 
+
+- (IBAction)loginButton_Clicked:(UIButton *)sender {
+    LogTrace(@"IN");
+    NSURL *URL = [NSURL URLWithString:@"http://api.5pet.vn/api/Login/Login"];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    NSDictionary *param = @{  @"email" : @"nghi123@gmail.com",
+                              @"password" : @"12345678"
+                              };
+    [manager GET:URL.absoluteString parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+    
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate showHomeViewController];
+    
+    LogDebug(@"OUT");
+}
+
+
 - (IBAction)onLoginWithFBButtonTapped:(UIButton *)sender {
+    LogTrace(@"IN");
     FBSDKLoginManager *fbLogin = [[FBSDKLoginManager alloc] init];
     [fbLogin logInWithReadPermissions:@[@"public_profile"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error) {
@@ -87,6 +120,7 @@
             NSLog(@"%@",result.token.tokenString);
         }
     }];
+    LogDebug(@"OUT");
 }
 
 /*

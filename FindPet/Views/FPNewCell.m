@@ -10,12 +10,12 @@
 
 #import "FPNewCell.h"
 #import "FPConstant.h"
+#import "Logging.h"
 
 @implementation FPNewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
     CGSize iconsize = CGSizeMake(10, 10);
     
     FAKIonIcons *icon = [FAKIonIcons iosHeartOutlineIconWithSize:10];
@@ -34,6 +34,7 @@
     self.avataImageView.layer.borderWidth = 1;
     self.avataImageView.layer.borderColor = FPBackgroundColor.CGColor;
     self.avataImageView.layer.masksToBounds = YES;
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
