@@ -9,6 +9,7 @@
 #import "FPListPetController.h"
 #import "FPPetCell.h"
 #import "Logging.h"
+#import "FPProfileViewController.h"
 
 @interface FPListPetController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -23,6 +24,11 @@
     LogTrace(@"IN");
     [self configUI];
     LogTrace(@"OUT");
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 - (void)configUI {
@@ -64,6 +70,15 @@
     LogTrace(@"IN");
     cell.pictureImage.image = [UIImage imageNamed:@"bg"];
     cell.nameLabel.text = @"Không gì là không thể";
+    LogTrace(@"OUT");
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN");
+    UIStoryboard *profileStoryboard = [UIStoryboard storyboardWithName:@"Profile" bundle:nil];
+    FPProfileViewController *profileViewController = [profileStoryboard instantiateViewControllerWithIdentifier:NSStringFromClass([FPProfileViewController class])];
+    
+    [self.navigationController pushViewController:profileViewController animated:YES];
     LogTrace(@"OUT");
 }
 
