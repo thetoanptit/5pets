@@ -26,7 +26,6 @@
 
 - (void)configUI {
     self.title = @"Danh sách PET";
-    
     [self.tableView registerNib:[UINib nibWithNibName:kFPPetCellIdentifier bundle:nil] forCellReuseIdentifier:kFPPetCellIdentifier];
 }
 
