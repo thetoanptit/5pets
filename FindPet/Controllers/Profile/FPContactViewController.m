@@ -13,6 +13,7 @@
 #import "Logging.h"
 
 @interface FPContactViewController ()<XLPagerTabStripChildItem>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 

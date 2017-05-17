@@ -13,6 +13,7 @@
 #import "Logging.h"
 
 @interface FPPictureViewController ()<XLPagerTabStripChildItem>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
