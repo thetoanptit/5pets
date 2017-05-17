@@ -58,6 +58,11 @@
 		81F0917E1ECC0A5E00683336 /* FPPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0917D1ECC0A5E00683336 /* FPPictureViewController.m */; };
 		81F091811ECC0A6D00683336 /* FPContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091801ECC0A6D00683336 /* FPContactViewController.m */; };
 		81F091841ECC297900683336 /* FPProfileContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091831ECC297900683336 /* FPProfileContainerViewController.m */; };
+		81F0918C1ECC3BFD00683336 /* FPProfileSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0918A1ECC3BFD00683336 /* FPProfileSingleTableViewCell.m */; };
+		81F0918D1ECC3BFD00683336 /* FPProfileSingleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F0918B1ECC3BFD00683336 /* FPProfileSingleTableViewCell.xib */; };
+		81F091911ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0918F1ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m */; };
+		81F091921ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F091901ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib */; };
+		81F091951ECC4EA500683336 /* FPConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091941ECC4EA500683336 /* FPConst.m */; };
 		CD195D837ADD66E5AEE8BFAC /* libPods-FindPet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +164,14 @@
 		81F091801ECC0A6D00683336 /* FPContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPContactViewController.m; sourceTree = "<group>"; };
 		81F091821ECC297900683336 /* FPProfileContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPProfileContainerViewController.h; sourceTree = "<group>"; };
 		81F091831ECC297900683336 /* FPProfileContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPProfileContainerViewController.m; sourceTree = "<group>"; };
+		81F091891ECC3BFD00683336 /* FPProfileSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPProfileSingleTableViewCell.h; sourceTree = "<group>"; };
+		81F0918A1ECC3BFD00683336 /* FPProfileSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPProfileSingleTableViewCell.m; sourceTree = "<group>"; };
+		81F0918B1ECC3BFD00683336 /* FPProfileSingleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPProfileSingleTableViewCell.xib; sourceTree = "<group>"; };
+		81F0918E1ECC3C2F00683336 /* FPProfileCoupleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPProfileCoupleTableViewCell.h; sourceTree = "<group>"; };
+		81F0918F1ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPProfileCoupleTableViewCell.m; sourceTree = "<group>"; };
+		81F091901ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPProfileCoupleTableViewCell.xib; sourceTree = "<group>"; };
+		81F091931ECC4EA500683336 /* FPConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPConst.h; sourceTree = "<group>"; };
+		81F091941ECC4EA500683336 /* FPConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPConst.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +306,8 @@
 			isa = PBXGroup;
 			children = (
 				5354B2721E7FD53E00B7000F /* FPConstant.h */,
+				81F091931ECC4EA500683336 /* FPConst.h */,
+				81F091941ECC4EA500683336 /* FPConst.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -403,6 +418,7 @@
 		81F091751ECBFC8400683336 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				81F091851ECC3BAC00683336 /* Cell */,
 				81F091761ECBFCB600683336 /* FPProfileViewController.h */,
 				81F091771ECBFCB600683336 /* FPProfileViewController.m */,
 				81F091791ECC0A4D00683336 /* FPInformationViewController.h */,
@@ -415,6 +431,19 @@
 				81F091831ECC297900683336 /* FPProfileContainerViewController.m */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		81F091851ECC3BAC00683336 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				81F091891ECC3BFD00683336 /* FPProfileSingleTableViewCell.h */,
+				81F0918A1ECC3BFD00683336 /* FPProfileSingleTableViewCell.m */,
+				81F0918B1ECC3BFD00683336 /* FPProfileSingleTableViewCell.xib */,
+				81F0918E1ECC3C2F00683336 /* FPProfileCoupleTableViewCell.h */,
+				81F0918F1ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m */,
+				81F091901ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		EEC38147312FC9D9E9BB8841 /* Pods */ = {
@@ -461,7 +490,7 @@
 				TargetAttributes = {
 					53AEBFBB1E73E5970089E674 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = AHB7MKP9EC;
+						DevelopmentTeam = 3U8EZZRDWZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -506,6 +535,8 @@
 				53AEBFCF1E73E5970089E674 /* LaunchScreen.storyboard in Resources */,
 				53AEBFCC1E73E5970089E674 /* Assets.xcassets in Resources */,
 				814AD6711EC9B9DF007FAEDF /* IQKeyboardManager.bundle in Resources */,
+				81F091921ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib in Resources */,
+				81F0918D1ECC3BFD00683336 /* FPProfileSingleTableViewCell.xib in Resources */,
 				532BC9941E80D534004CF413 /* FPMenuCell.xib in Resources */,
 				53AEBFCA1E73E5970089E674 /* Main.storyboard in Resources */,
 			);
@@ -567,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				814AD6631EC9B9DF007FAEDF /* IQNSArray+Sort.m in Sources */,
+				81F091911ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m in Sources */,
 				81F091811ECC0A6D00683336 /* FPContactViewController.m in Sources */,
 				814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */,
 				53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */,
@@ -582,6 +614,7 @@
 				532BC9A31E810A7E004CF413 /* FPScanBluetoothController.m in Sources */,
 				81F0917E1ECC0A5E00683336 /* FPPictureViewController.m in Sources */,
 				814AD63C1EC9A2D3007FAEDF /* FPAccountModel.m in Sources */,
+				81F091951ECC4EA500683336 /* FPConst.m in Sources */,
 				5354B2621E7F951500B7000F /* FPLeftMenuController.m in Sources */,
 				532BC99D1E80FBE8004CF413 /* FPPetCell.m in Sources */,
 				814AD66D1EC9B9DF007FAEDF /* IQPreviousNextView.m in Sources */,
@@ -599,6 +632,7 @@
 				814AD66E1EC9B9DF007FAEDF /* IQTitleBarButtonItem.m in Sources */,
 				5354B2681E7FB96F00B7000F /* FPNewController.m in Sources */,
 				814AD6651EC9B9DF007FAEDF /* IQUITextFieldView+Additions.m in Sources */,
+				81F0918C1ECC3BFD00683336 /* FPProfileSingleTableViewCell.m in Sources */,
 				5354B2751E7FDC9200B7000F /* FPNewCell.m in Sources */,
 				81F091841ECC297900683336 /* FPProfileContainerViewController.m in Sources */,
 				5354B2651E7FA90400B7000F /* FPMenuCell.m in Sources */,
@@ -722,7 +756,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AHB7MKP9EC;
+				DEVELOPMENT_TEAM = 3U8EZZRDWZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -731,7 +765,7 @@
 				INFOPLIST_FILE = FindPet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet;
+				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -744,7 +778,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AHB7MKP9EC;
+				DEVELOPMENT_TEAM = 3U8EZZRDWZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -753,7 +787,7 @@
 				INFOPLIST_FILE = FindPet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet;
+				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
