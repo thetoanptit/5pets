@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "FPConstant.h"
 #import "Logging.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,8 @@
     LogTrace(@"IN");
 //    // Override point for customization after application launch.
 //    self.window.rootViewController = self.drawerController;
-//    
+//
+    [[IQKeyboardManager sharedManager] setEnable:YES];
     [[UINavigationBar appearance] setBarTintColor:FPBackgroundColor];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
