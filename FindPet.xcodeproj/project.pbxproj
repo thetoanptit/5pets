@@ -53,6 +53,11 @@
 		814AD6701EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6601EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m */; };
 		814AD6711EC9B9DF007FAEDF /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 814AD6621EC9B9DF007FAEDF /* IQKeyboardManager.bundle */; };
 		81F091741ECBF91E00683336 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F091731ECBF91E00683336 /* Profile.storyboard */; };
+		81F091781ECBFCB600683336 /* FPProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091771ECBFCB600683336 /* FPProfileViewController.m */; };
+		81F0917B1ECC0A4D00683336 /* FPInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0917A1ECC0A4D00683336 /* FPInformationViewController.m */; };
+		81F0917E1ECC0A5E00683336 /* FPPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0917D1ECC0A5E00683336 /* FPPictureViewController.m */; };
+		81F091811ECC0A6D00683336 /* FPContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091801ECC0A6D00683336 /* FPContactViewController.m */; };
+		81F091841ECC297900683336 /* FPProfileContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091831ECC297900683336 /* FPProfileContainerViewController.m */; };
 		CD195D837ADD66E5AEE8BFAC /* libPods-FindPet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +149,16 @@
 		814AD6601EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		814AD6621EC9B9DF007FAEDF /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		81F091731ECBF91E00683336 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		81F091761ECBFCB600683336 /* FPProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPProfileViewController.h; sourceTree = "<group>"; };
+		81F091771ECBFCB600683336 /* FPProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPProfileViewController.m; sourceTree = "<group>"; };
+		81F091791ECC0A4D00683336 /* FPInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPInformationViewController.h; sourceTree = "<group>"; };
+		81F0917A1ECC0A4D00683336 /* FPInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPInformationViewController.m; sourceTree = "<group>"; };
+		81F0917C1ECC0A5E00683336 /* FPPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPictureViewController.h; sourceTree = "<group>"; };
+		81F0917D1ECC0A5E00683336 /* FPPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPictureViewController.m; sourceTree = "<group>"; };
+		81F0917F1ECC0A6D00683336 /* FPContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPContactViewController.h; sourceTree = "<group>"; };
+		81F091801ECC0A6D00683336 /* FPContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPContactViewController.m; sourceTree = "<group>"; };
+		81F091821ECC297900683336 /* FPProfileContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPProfileContainerViewController.h; sourceTree = "<group>"; };
+		81F091831ECC297900683336 /* FPProfileContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPProfileContainerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +196,7 @@
 		53417D8B1E73EB6100AD2337 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				81F091751ECBFC8400683336 /* Profile */,
 				53417D901E73EC2F00AD2337 /* FPHomeController.h */,
 				53417D911E73EC2F00AD2337 /* FPHomeController.m */,
 				53DA071F1E7A6C240092563A /* FPLoginController.h */,
@@ -384,6 +400,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		81F091751ECBFC8400683336 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				81F091761ECBFCB600683336 /* FPProfileViewController.h */,
+				81F091771ECBFCB600683336 /* FPProfileViewController.m */,
+				81F091791ECC0A4D00683336 /* FPInformationViewController.h */,
+				81F0917A1ECC0A4D00683336 /* FPInformationViewController.m */,
+				81F0917C1ECC0A5E00683336 /* FPPictureViewController.h */,
+				81F0917D1ECC0A5E00683336 /* FPPictureViewController.m */,
+				81F0917F1ECC0A6D00683336 /* FPContactViewController.h */,
+				81F091801ECC0A6D00683336 /* FPContactViewController.m */,
+				81F091821ECC297900683336 /* FPProfileContainerViewController.h */,
+				81F091831ECC297900683336 /* FPProfileContainerViewController.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		EEC38147312FC9D9E9BB8841 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				814AD6631EC9B9DF007FAEDF /* IQNSArray+Sort.m in Sources */,
+				81F091811ECC0A6D00683336 /* FPContactViewController.m in Sources */,
 				814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */,
 				53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */,
 				814AD6681EC9B9DF007FAEDF /* IQUIWindow+Hierarchy.m in Sources */,
@@ -542,13 +576,16 @@
 				814AD6671EC9B9DF007FAEDF /* IQUIViewController+Additions.m in Sources */,
 				814AD66B1EC9B9DF007FAEDF /* IQTextView.m in Sources */,
 				814AD66A1EC9B9DF007FAEDF /* IQKeyboardReturnKeyHandler.m in Sources */,
+				81F0917B1ECC0A4D00683336 /* FPInformationViewController.m in Sources */,
 				53A7752B1E7D36C4002F1437 /* FPMyPetsController.m in Sources */,
 				53DA07211E7A6C240092563A /* FPLoginController.m in Sources */,
 				532BC9A31E810A7E004CF413 /* FPScanBluetoothController.m in Sources */,
+				81F0917E1ECC0A5E00683336 /* FPPictureViewController.m in Sources */,
 				814AD63C1EC9A2D3007FAEDF /* FPAccountModel.m in Sources */,
 				5354B2621E7F951500B7000F /* FPLeftMenuController.m in Sources */,
 				532BC99D1E80FBE8004CF413 /* FPPetCell.m in Sources */,
 				814AD66D1EC9B9DF007FAEDF /* IQPreviousNextView.m in Sources */,
+				81F091781ECBFCB600683336 /* FPProfileViewController.m in Sources */,
 				53A775281E7D36B6002F1437 /* FPBoothController.m in Sources */,
 				53A775251E7D366F002F1437 /* FPSomeUsersController.m in Sources */,
 				53AEBFC41E73E5970089E674 /* AppDelegate.m in Sources */,
@@ -563,6 +600,7 @@
 				5354B2681E7FB96F00B7000F /* FPNewController.m in Sources */,
 				814AD6651EC9B9DF007FAEDF /* IQUITextFieldView+Additions.m in Sources */,
 				5354B2751E7FDC9200B7000F /* FPNewCell.m in Sources */,
+				81F091841ECC297900683336 /* FPProfileContainerViewController.m in Sources */,
 				5354B2651E7FA90400B7000F /* FPMenuCell.m in Sources */,
 				814AD66F1EC9B9DF007FAEDF /* IQToolbar.m in Sources */,
 			);
