@@ -52,6 +52,7 @@
 		814AD66F1EC9B9DF007FAEDF /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD65E1EC9B9DF007FAEDF /* IQToolbar.m */; };
 		814AD6701EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6601EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m */; };
 		814AD6711EC9B9DF007FAEDF /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 814AD6621EC9B9DF007FAEDF /* IQKeyboardManager.bundle */; };
+		81F091741ECBF91E00683336 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F091731ECBF91E00683336 /* Profile.storyboard */; };
 		CD195D837ADD66E5AEE8BFAC /* libPods-FindPet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,7 @@
 		814AD65F1EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
 		814AD6601EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		814AD6621EC9B9DF007FAEDF /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		81F091731ECBF91E00683336 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				53AEBFBF1E73E5970089E674 /* Supporting Files */,
 				53AEBFC81E73E5970089E674 /* Main.storyboard */,
 				532BC99F1E81084F004CF413 /* PetStoryboard.storyboard */,
+				81F091731ECBF91E00683336 /* Profile.storyboard */,
 			);
 			path = FindPet;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			files = (
 				532BC99E1E80FBE8004CF413 /* FPPetCell.xib in Resources */,
 				532BC9A01E81084F004CF413 /* PetStoryboard.storyboard in Resources */,
+				81F091741ECBF91E00683336 /* Profile.storyboard in Resources */,
 				53AEBFCF1E73E5970089E674 /* LaunchScreen.storyboard in Resources */,
 				53AEBFCC1E73E5970089E674 /* Assets.xcassets in Resources */,
 				814AD6711EC9B9DF007FAEDF /* IQKeyboardManager.bundle in Resources */,

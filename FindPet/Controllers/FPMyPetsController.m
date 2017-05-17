@@ -32,7 +32,6 @@
     LogTrace(@"IN");
     self.title = @"PET của tôi";
     self.tableView.tableFooterView = [UIView new];
-    
     FAKIonIcons *icon = [FAKIonIcons naviconIconWithSize:30];
     [icon setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[icon imageWithSize:CGSizeMake(30, 30)] style:UIBarButtonItemStylePlain target:self action:@selector(onMenuButtonTapped)];
@@ -43,7 +42,7 @@
     UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithImage:[icon imageWithSize:CGSizeMake(30, 30)] style:UIBarButtonItemStylePlain target:self action:@selector(onSearchButtonTapped)];
     self.navigationItem.rightBarButtonItem = searchButton;
     
-    [self.navigationItem.backBarButtonItem setTitle:@""];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     [self.tableView registerNib:[UINib nibWithNibName:kFPMenuCellIdentifier bundle:nil] forCellReuseIdentifier:kFPMenuCellIdentifier];
     LogTrace(@"OUT");
 }
