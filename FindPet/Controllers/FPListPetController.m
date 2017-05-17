@@ -28,11 +28,7 @@
 - (void)configUI {
     LogTrace(@"IN");
     self.title = @"Danh sách PET";
-<<<<<<< HEAD
     
-    [self.navigationItem.backBarButtonItem setTitle:@""];
-=======
->>>>>>> origin/master
     [self.tableView registerNib:[UINib nibWithNibName:kFPPetCellIdentifier bundle:nil] forCellReuseIdentifier:kFPPetCellIdentifier];
     LogTrace(@"OUT");
 }
