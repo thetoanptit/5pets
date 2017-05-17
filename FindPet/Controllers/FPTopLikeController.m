@@ -19,15 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    LogTrace(@"IN");
     // Do any additional setup after loading the view.
+    LogTrace(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
+    LogTrace(@"OUT");
 }
 
 - (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
+    LogTrace(@"IN-OUT");
     return @"TOP LIKE";
 }
 

@@ -26,40 +26,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    LogTrace(@"IN");
     self.tableView.estimatedRowHeight = 120.0f;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.textView.placeholder = @"Bạn muốn chia sẻ gì?...";
     self.textView.placeholderColor = FPBackgroundColor;
+    LogTrace(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
+    LogTrace(@"OUT");
 }
 
 - (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
+    LogTrace(@"IN-OUT");
     return @"MỚI NHẤT";
 }
 
 - (UIColor *)colorForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
+    LogTrace(@"IN-OUT");
     return [UIColor whiteColor];
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    LogTrace(@"IN-OUT");
     return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN");
     FPNewCell *cell = [tableView dequeueReusableCellWithIdentifier:kFPNewCellIdentifier forIndexPath:indexPath];
     [self configCell:cell atIndexPath:indexPath];
+    LogTrace(@"OUT");
     return cell;
 }
 
 - (void)configCell:(FPNewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    
+    LogTrace(@"IN");
     cell.avataImageView.image = [UIImage imageNamed:@"bg"];
     cell.nameLabel.text = @"Chung Tu Dan";
     cell.timeLabel.text = @"1 giờ trước";
@@ -68,6 +76,7 @@
     cell.numberLikeLabel.text = @"8";
     cell.numberCommentLabel.text = @"2";
     cell.numberShareLabel.text = @"1";
+    LogTrace(@"OUT");
 }
 
 /*

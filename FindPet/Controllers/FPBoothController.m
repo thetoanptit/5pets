@@ -7,6 +7,7 @@
 //
 
 #import <FontAwesomeKit/FontAwesomeKit.h>
+#import <MMDrawerController/UIViewController+MMDrawerController.h>
 
 #import "FPBoothController.h"
 #import "FPMenuCell.h"
@@ -24,22 +25,34 @@
     [super viewDidLoad];
     LogTrace(@"IN");
     [self configUI];
-    
-    LogDebug(@"OUT");
+    self.title = @"Gian hàng";
+    LogTrace(@"OUT");
 }
 
 - (void)configUI {
     LogTrace(@"IN");
     self.tableView.tableFooterView = [UIView new];
+    
+    FAKIonIcons *icon = [FAKIonIcons naviconIconWithSize:30];
+    [icon setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[icon imageWithSize:CGSizeMake(30, 30)] style:UIBarButtonItemStylePlain target:self action:@selector(onMenuButtonTapped)];
+    self.navigationItem.leftBarButtonItem = menuButton;
+    
+    icon = [FAKIonIcons iosSearchIconWithSize:30];
+    [icon setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithImage:[icon imageWithSize:CGSizeMake(30, 30)] style:UIBarButtonItemStylePlain target:self action:@selector(onSearchButtonTapped)];
+    self.navigationItem.rightBarButtonItem = searchButton;
+    
+    
     [self.tableView registerNib:[UINib nibWithNibName:kFPMenuCellIdentifier bundle:nil] forCellReuseIdentifier:kFPMenuCellIdentifier];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -63,7 +76,7 @@
     LogTrace(@"IN");
     FPMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:kFPMenuCellIdentifier forIndexPath:indexPath];
     [self configCell:cell forIndexPath:indexPath];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
     return cell;
 }
 
@@ -109,8 +122,22 @@
     }
 
     cell.label.text = title;
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
+
+- (void)onMenuButtonTapped {
+    LogTrace(@"IN");
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    LogTrace(@"OUT");
+    
+}
+
+- (void)onSearchButtonTapped {
+    LogTrace(@"IN");
+    LogTrace(@"OUT");
+}
+
+
 /*
 #pragma mark - Navigation
 

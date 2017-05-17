@@ -7,10 +7,11 @@
 //
 
 #import <FontAwesomeKit/FontAwesomeKit.h>
-
+#import <MMDrawerController/UIViewController+MMDrawerController.h>
 #import "FPMyPetsController.h"
 #import "FPMenuCell.h"
 #import "Logging.h"
+#import "FPListPetController.h"
 
 @interface FPMyPetsController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -24,22 +25,48 @@
     [super viewDidLoad];
     LogTrace(@"IN");
     [self configUI];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)configUI {
     LogTrace(@"IN");
+    self.title = @"PET của tôi";
     self.tableView.tableFooterView = [UIView new];
+    
+    FAKIonIcons *icon = [FAKIonIcons naviconIconWithSize:30];
+    [icon setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[icon imageWithSize:CGSizeMake(30, 30)] style:UIBarButtonItemStylePlain target:self action:@selector(onMenuButtonTapped)];
+    self.navigationItem.leftBarButtonItem = menuButton;
+    
+    icon = [FAKIonIcons iosSearchIconWithSize:30];
+    [icon setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithImage:[icon imageWithSize:CGSizeMake(30, 30)] style:UIBarButtonItemStylePlain target:self action:@selector(onSearchButtonTapped)];
+    self.navigationItem.rightBarButtonItem = searchButton;
+    
+    [self.navigationItem.backBarButtonItem setTitle:@""];
     [self.tableView registerNib:[UINib nibWithNibName:kFPMenuCellIdentifier bundle:nil] forCellReuseIdentifier:kFPMenuCellIdentifier];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
+
+- (void)onMenuButtonTapped {
+    LogTrace(@"IN");
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    LogTrace(@"OUT");
+    
+}
+
+- (void)onSearchButtonTapped {
+    LogTrace(@"IN");
+    LogTrace(@"OUT");
+}
+
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 
@@ -57,7 +84,7 @@
     LogTrace(@"IN");
     FPMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:kFPMenuCellIdentifier forIndexPath:indexPath];
     [self configCell:cell forIndexPath:indexPath];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
     return cell;
 }
 
@@ -92,14 +119,16 @@
     [icon setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     cell.image.image = [icon imageWithSize:CGSizeMake(25, 25)];
     cell.label.text = title;
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     LogTrace(@"IN");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"PetStoryboard" bundle:nil];
     switch (indexPath.row) {
         case 0: {
-            [self performSegueWithIdentifier:@"showListPetSegue" sender:self];
+            FPListPetController *listPetController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([FPListPetController class])];
+            [self.navigationController pushViewController:listPetController animated:YES];
             break;
         }
         case 1: {
@@ -109,7 +138,7 @@
         default:
             break;
     }
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 /*

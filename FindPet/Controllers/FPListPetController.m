@@ -20,40 +20,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    LogTrace(@"IN");
     [self configUI];
+    LogTrace(@"OUT");
 }
 
 - (void)configUI {
+    LogTrace(@"IN");
     self.title = @"Danh sách PET";
     
+    [self.navigationItem.backBarButtonItem setTitle:@""];
     [self.tableView registerNib:[UINib nibWithNibName:kFPPetCellIdentifier bundle:nil] forCellReuseIdentifier:kFPPetCellIdentifier];
+    LogTrace(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
+    LogTrace(@"OUT");
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    LogTrace(@"IN-OUT");
     return 3;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN-OUT");
     return 165.0f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN");
     FPPetCell *cell = [tableView dequeueReusableCellWithIdentifier:kFPPetCellIdentifier forIndexPath:indexPath];
     [self configCell:cell atIndexPath:indexPath];
+    LogTrace(@"OUT");
     return cell;
 }
 
 - (void)configCell:(FPPetCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    LogTrace(@"IN");
     cell.pictureImage.image = [UIImage imageNamed:@"bg"];
     cell.nameLabel.text = @"Không gì là không thể";
+    LogTrace(@"OUT");
 }
 
 /*

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FPLeftMenuController : UIViewController
+@protocol FPLeftMenuControllerDelegate <NSObject>
 
+- (void) showMyPetsController;
+
+@end
+
+@interface FPLeftMenuController : UIViewController
+@property (nonatomic, weak) id<FPLeftMenuControllerDelegate> delegate;
 @end

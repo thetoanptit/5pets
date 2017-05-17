@@ -25,19 +25,19 @@
     [super viewDidLoad];
     LogTrace(@"IN");
     [self configUI];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
     
 
 - (void)didReceiveMemoryWarning {
     LogTrace(@"IN");
     [super didReceiveMemoryWarning];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     LogTrace(@"IN");
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
     return UIStatusBarStyleLightContent;
 }
 
@@ -82,19 +82,19 @@
             oldCell.transform = CGAffineTransformMakeScale(0.8, 0.8);
         }
     };
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)onMenuButtonTapped {
     LogTrace(@"IN");
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
     
 }
 
 - (void)onSearchButtonTapped {
     LogTrace(@"IN");
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 #pragma mark - XLPagerTabStripViewControllerDelegate, XLPagerTabStripViewControllerDataSource
@@ -106,9 +106,10 @@
     UIViewController *topLikeController = [storyboard instantiateViewControllerWithIdentifier:@"FPTopLikeController"];
     UIViewController *topShareController = [storyboard instantiateViewControllerWithIdentifier:@"FPTopShareController"];
     UIViewController *petStrayController = [storyboard instantiateViewControllerWithIdentifier:@"FPPetStrayController"];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
     return @[newController, topLikeController, topShareController, petStrayController];
 }
+
 
 /*
 #pragma mark - Navigation

@@ -34,7 +34,7 @@
     [self configUI];
     // Do any additional setup after loading the view.
     
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,7 +42,7 @@
     LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
     
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)configUI {
@@ -83,7 +83,7 @@
     self.instagramButton.layer.borderColor = [UIColor whiteColor].CGColor;
     self.instagramButton.layer.masksToBounds = YES;
 
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 
@@ -104,7 +104,7 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate showHomeViewController];
     
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 
@@ -120,7 +120,7 @@
             NSLog(@"%@",result.token.tokenString);
         }
     }];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 /*

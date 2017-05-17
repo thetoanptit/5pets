@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="inS-fC-VbW">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="inS-fC-VbW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,8 +13,7 @@
         <!--List Pet Controller-->
         <scene sceneID="gOT-0F-9Rl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f5h-05-rJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="6q0-1Z-9ze" customClass="FPListPetController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FPListPetController" id="6q0-1Z-9ze" customClass="FPListPetController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VyO-m5-0mo"/>
                         <viewControllerLayoutGuide type="bottom" id="fzQ-Xg-a3Q"/>
@@ -44,13 +43,13 @@
                         <outlet property="tableView" destination="QQp-m3-RFa" id="gyl-n6-MKw"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5h-05-rJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2889" y="1427"/>
         </scene>
         <!--My Pets Controller-->
         <scene sceneID="QND-46-zhp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cWp-hf-VxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="FPMyPetsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x5o-jO-SFp" customClass="FPMyPetsController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7nM-Fm-AF4"/>
@@ -80,12 +79,10 @@
                     <navigationItem key="navigationItem" id="5Zy-sl-fAh"/>
                     <connections>
                         <outlet property="tableView" destination="dWE-W7-W66" id="LUM-MT-gdo"/>
-                        <segue destination="6q0-1Z-9ze" kind="show" identifier="showListPetSegue" id="jxJ-U2-RkI">
-                            <nil key="action"/>
-                        </segue>
                         <segue destination="Xn0-3L-T4f" kind="show" identifier="showScanBluetoothSegue" id="7ya-7O-ebr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWp-hf-VxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1920.8" y="2200.7496251874063"/>
         </scene>
@@ -129,7 +126,6 @@
         <!--Navigation Controller-->
         <scene sceneID="ff4-31-X7j">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d5c-MI-ZmJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="FPMyPetsNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="inS-fC-VbW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uy1-aD-vh3">
@@ -141,6 +137,7 @@
                         <segue destination="x5o-jO-SFp" kind="relationship" relationship="rootViewController" id="8Lf-M3-Q36"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5c-MI-ZmJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="981.60000000000002" y="2200.7496251874063"/>
         </scene>

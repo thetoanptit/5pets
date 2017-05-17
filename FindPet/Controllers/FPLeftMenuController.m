@@ -10,7 +10,11 @@
 
 #import "FPLeftMenuController.h"
 #import "FPMenuCell.h"
+#import "FPHomeController.h"
 #import "Logging.h"
+#import "AppDelegate.h"
+#import "FPConstant.h"
+#import <MMDrawerController/UIViewController+MMDrawerController.h>
 
 @interface FPLeftMenuController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -26,14 +30,14 @@
     [super viewDidLoad];
     LogTrace(@"IN");
     [self configUI];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     LogTrace(@"IN");
     // Dispose of any resources that can be recreated.
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 - (void)configUI {
@@ -47,7 +51,7 @@
     self.avataImageView.layer.masksToBounds = YES;
     
     self.nameLabel.text = [@"Trần Mỹ Anh" uppercaseString];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
@@ -61,7 +65,7 @@
     LogTrace(@"IN");
     FPMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:kFPMenuCellIdentifier forIndexPath:indexPath];
     [self configCell:cell forIndexPath:indexPath];
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
     return cell;
 }
 
@@ -111,8 +115,16 @@
     [icon setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     cell.image.image = [icon imageWithSize:CGSizeMake(25, 25)];
     cell.label.text = title;
-    LogDebug(@"OUT");
+    LogTrace(@"OUT");
 }
+
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    
+}
+
 
 /*
 #pragma mark - Navigation

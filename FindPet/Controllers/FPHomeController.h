@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <XLButtonBarPagerTabStripViewController.h>
 
-
 @interface FPHomeController : XLButtonBarPagerTabStripViewController
 
 @end
