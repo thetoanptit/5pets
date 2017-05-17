@@ -30,6 +30,7 @@
 - (void)configUI {
     LogTrace(@"IN");
     self.tableView.tableFooterView = [UIView new];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     [self.tableView registerNib:[UINib nibWithNibName:kFPMenuCellIdentifier bundle:nil] forCellReuseIdentifier:kFPMenuCellIdentifier];
     LogDebug(@"OUT");
 }
