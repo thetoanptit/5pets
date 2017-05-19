@@ -37,6 +37,7 @@
 		53AEBFCF1E73E5970089E674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBFCD1E73E5970089E674 /* LaunchScreen.storyboard */; };
 		53DA07211E7A6C240092563A /* FPLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DA07201E7A6C240092563A /* FPLoginController.m */; };
 		810A2E021ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810A2E011ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m */; };
+		8114523B1ECECD59004D6BBA /* FPAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8114523A1ECECD59004D6BBA /* FPAccountManager.m */; };
 		814AD63C1EC9A2D3007FAEDF /* FPAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD63B1EC9A2D3007FAEDF /* FPAccountModel.m */; };
 		814AD6631EC9B9DF007FAEDF /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6411EC9B9DF007FAEDF /* IQNSArray+Sort.m */; };
 		814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6431EC9B9DF007FAEDF /* IQUIScrollView+Additions.m */; };
@@ -122,9 +123,11 @@
 		5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FindPet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		810A2E001ECDB1510021CDE3 /* FPLoginWithFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLoginWithFacebookViewController.h; sourceTree = "<group>"; };
 		810A2E011ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLoginWithFacebookViewController.m; sourceTree = "<group>"; };
+		811452391ECECD59004D6BBA /* FPAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAccountManager.h; sourceTree = "<group>"; };
+		8114523A1ECECD59004D6BBA /* FPAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAccountManager.m; sourceTree = "<group>"; };
 		814AD6381EC9A258007FAEDF /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
-		814AD63A1EC9A2D3007FAEDF /* FPAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAccountModel.h; sourceTree = "<group>"; };
-		814AD63B1EC9A2D3007FAEDF /* FPAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAccountModel.m; sourceTree = "<group>"; };
+		814AD63A1EC9A2D3007FAEDF /* FPAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPAccountModel.h; path = ../FPAccountModel.h; sourceTree = "<group>"; };
+		814AD63B1EC9A2D3007FAEDF /* FPAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPAccountModel.m; path = ../FPAccountModel.m; sourceTree = "<group>"; };
 		814AD6401EC9B9DF007FAEDF /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		814AD6411EC9B9DF007FAEDF /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
 		814AD6421EC9B9DF007FAEDF /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
@@ -317,6 +320,24 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		811452371ECECD2F004D6BBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				814AD63A1EC9A2D3007FAEDF /* FPAccountModel.h */,
+				814AD63B1EC9A2D3007FAEDF /* FPAccountModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		811452381ECECD3D004D6BBA /* ModelManager */ = {
+			isa = PBXGroup;
+			children = (
+				811452391ECECD59004D6BBA /* FPAccountManager.h */,
+				8114523A1ECECD59004D6BBA /* FPAccountManager.m */,
+			);
+			path = ModelManager;
+			sourceTree = "<group>";
+		};
 		814AD6371EC9A23D007FAEDF /* DebugLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,8 +349,8 @@
 		814AD6391EC9A2BB007FAEDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				814AD63A1EC9A2D3007FAEDF /* FPAccountModel.h */,
-				814AD63B1EC9A2D3007FAEDF /* FPAccountModel.m */,
+				811452381ECECD3D004D6BBA /* ModelManager */,
+				811452371ECECD2F004D6BBA /* Model */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -627,6 +648,7 @@
 				81F091781ECBFCB600683336 /* FPProfileViewController.m in Sources */,
 				53A775281E7D36B6002F1437 /* FPBoothController.m in Sources */,
 				53A775251E7D366F002F1437 /* FPSomeUsersController.m in Sources */,
+				8114523B1ECECD59004D6BBA /* FPAccountManager.m in Sources */,
 				53AEBFC41E73E5970089E674 /* AppDelegate.m in Sources */,
 				814AD6701EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				5354B2711E7FBA3400B7000F /* FPPetStrayController.m in Sources */,

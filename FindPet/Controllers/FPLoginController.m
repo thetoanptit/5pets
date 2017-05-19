@@ -14,6 +14,8 @@
 #import "AppDelegate.h"
 #import <AFNetworking.h>
 #import "Logging.h"
+#import "FPAccountModel.h"
+#import "FPAccountManager.h"
 
 @interface FPLoginController ()
 
@@ -102,6 +104,31 @@
             AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
             [appDelegate showHomeViewController];
             [SVProgressHUD dismiss];
+            //Save account to Realm
+            FPAccountModel *accountModel = [[FPAccountModel alloc] init];
+            NSDictionary *dataAccount = responseObject[@"Data"];
+            accountModel.email = dataAccount[@"Email"];
+            accountModel.avatar = dataAccount[@"Avatar"];
+            accountModel.password = dataAccount[@"Password"];
+            accountModel.addDate = dataAccount[@"AddDate"];
+            accountModel.loginLast = dataAccount[@"LoginLast"];
+            accountModel.changePassLast = dataAccount[@"ChangePassLast"];
+            accountModel.fullName = dataAccount[@"FullName"];
+            accountModel.phone = dataAccount[@"Phone"];
+            accountModel.address = dataAccount[@"Address"];
+            accountModel.birthday = dataAccount[@"BirthDay"];
+            accountModel.sex = dataAccount[@"Sex"];
+            accountModel.city = dataAccount[@"City"];
+            accountModel.distric = dataAccount[@"Distric"];
+            accountModel.fbID = dataAccount[@"fbID"];
+            accountModel.ssID = dataAccount[@"ssID"];
+            accountModel.latitude = [dataAccount[@"Latitude"] floatValue];
+            accountModel.longtitude = [dataAccount[@"Longtitude"] floatValue];
+            accountModel.distant = [dataAccount[@"Distant"] floatValue];
+            accountModel.fcm_token = dataAccount[@"fcm_token"];
+            
+            [FPAccountManager insertAccountWithFPAccountModel:accountModel];
+            
         } else {
             [SVProgressHUD showErrorWithStatus:@"Sai mật khẩu hoặc password!"];
         }

@@ -24,6 +24,7 @@
 @property (nonatomic, strong) NSString *city;
 @property (nonatomic, strong) NSString *distric;
 @property (nonatomic, strong) NSString *fbID;
+@property (nonatomic) NSString *ssID;
 @property (nonatomic) float latitude;
 @property (nonatomic) float longtitude;
 @property (nonatomic) float distant;
