@@ -9,7 +9,7 @@
 #import <FontAwesomeKit/FontAwesomeKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-
+#import <SVProgressHUD/SVProgressHUD.h>
 #import "FPLoginController.h"
 #import "AppDelegate.h"
 #import <AFNetworking.h>
@@ -89,20 +89,30 @@
 
 - (IBAction)loginButton_Clicked:(UIButton *)sender {
     LogTrace(@"IN");
+    [SVProgressHUD showWithStatus:@"Đang đăng nhập"];
     NSURL *URL = [NSURL URLWithString:@"http://api.5pet.vn/api/Login/Login"];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    NSDictionary *param = @{  @"email" : @"nghi123@gmail.com",
-                              @"password" : @"12345678"
+    NSDictionary *param = @{  @"username" : self.usernameTextField.text,
+                              @"password" : self.passwordTextField.text
                               };
-    [manager GET:URL.absoluteString parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+    [manager POST:URL.absoluteString parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
+        NSInteger susscess = [[responseObject objectForKey:@"Success"] integerValue];
+        if (susscess == 1) {
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            [appDelegate showHomeViewController];
+            [SVProgressHUD dismiss];
+        } else {
+            [SVProgressHUD showErrorWithStatus:@"Sai mật khẩu hoặc password!"];
+        }
+
     } failure:^(NSURLSessionTask *operation, NSError *error) {
         NSLog(@"Error: %@", error);
+        [SVProgressHUD showErrorWithStatus:@"Đăng nhập lỗi"];
     }];
     
-    
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate showHomeViewController];
+
+
     
     LogTrace(@"OUT");
 }
@@ -110,16 +120,19 @@
 
 - (IBAction)onLoginWithFBButtonTapped:(UIButton *)sender {
     LogTrace(@"IN");
-    FBSDKLoginManager *fbLogin = [[FBSDKLoginManager alloc] init];
-    [fbLogin logInWithReadPermissions:@[@"public_profile"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-        if (error) {
-            
-        } else if(result.isCancelled) {
-        
-        } else {
-            NSLog(@"%@",result.token.tokenString);
-        }
-    }];
+//    FBSDKLoginManager *fbLogin = [[FBSDKLoginManager alloc] init];
+//    [fbLogin logInWithReadPermissions:@[@"public_profile"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+//        if (error) {
+//            
+//        } else if(result.isCancelled) {
+//        
+//        } else {
+//            NSLog(@"%@",result.token.tokenString);
+//        }
+//    }];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"FPLoginWithFacebookViewController"];
+    [self  presentViewController:vc animated:YES completion:nil];
     LogTrace(@"OUT");
 }
 

@@ -85,6 +85,7 @@
     LogTrace(@"OUT");
 }
 
+
 - (void)onMenuButtonTapped {
     LogTrace(@"IN");
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
