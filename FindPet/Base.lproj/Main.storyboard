@@ -480,6 +480,24 @@
             </objects>
             <point key="canvasLocation" x="110" y="-858"/>
         </scene>
+        <!--Login With Facebook View Controller-->
+        <scene sceneID="PdH-t1-KgA">
+            <objects>
+                <viewController storyboardIdentifier="FPLoginWithFacebookViewController" id="FKf-wh-qQA" customClass="FPLoginWithFacebookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j0z-Du-1XG"/>
+                        <viewControllerLayoutGuide type="bottom" id="DcD-Ye-SuA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ia8-3L-tnB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbq-hI-bDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="-859"/>
+        </scene>
         <!--Left Menu Controller-->
         <scene sceneID="Ng0-kj-Jzt">
             <objects>

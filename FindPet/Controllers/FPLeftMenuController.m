@@ -14,6 +14,8 @@
 #import "Logging.h"
 #import "AppDelegate.h"
 #import "FPConstant.h"
+#import "FPAccountManager.h"
+#import "FPAccountModel.h"
 #import <MMDrawerController/UIViewController+MMDrawerController.h>
 
 @interface FPLeftMenuController ()<UITableViewDataSource, UITableViewDelegate>
@@ -43,14 +45,15 @@
 - (void)configUI {
     LogTrace(@"IN");
     self.tableView.tableFooterView = [UIView new];
-    
+    FPAccountModel *account = [FPAccountManager getAccountModel];
+    LogTrace(@"Email: %@", account.email);
     self.avataImageView.image = [UIImage imageNamed:@"bg"];
     self.avataImageView.layer.borderWidth = 1;
     self.avataImageView.layer.cornerRadius = 35;
     self.avataImageView.layer.borderColor = [UIColor whiteColor].CGColor;
     self.avataImageView.layer.masksToBounds = YES;
     
-    self.nameLabel.text = [@"Trần Mỹ Anh" uppercaseString];
+    self.nameLabel.text = [account.fullName uppercaseString];
     LogTrace(@"OUT");
 }
 
