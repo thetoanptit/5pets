@@ -16,6 +16,7 @@
 #import "Logging.h"
 #import "FPAccountModel.h"
 #import "FPAccountManager.h"
+#import "FPObjectMapper.h"
 
 @interface FPLoginController ()
 
@@ -105,28 +106,7 @@
             [appDelegate showHomeViewController];
             [SVProgressHUD dismiss];
             //Save account to Realm
-            FPAccountModel *accountModel = [[FPAccountModel alloc] init];
-            NSDictionary *dataAccount = responseObject[@"Data"];
-            accountModel.email = dataAccount[@"Email"];
-            accountModel.avatar = dataAccount[@"Avatar"];
-            accountModel.password = dataAccount[@"Password"];
-            accountModel.addDate = dataAccount[@"AddDate"];
-            accountModel.loginLast = dataAccount[@"LoginLast"];
-            accountModel.changePassLast = dataAccount[@"ChangePassLast"];
-            accountModel.fullName = dataAccount[@"FullName"];
-            accountModel.phone = dataAccount[@"Phone"];
-            accountModel.address = dataAccount[@"Address"];
-            accountModel.birthday = dataAccount[@"BirthDay"];
-            accountModel.sex = dataAccount[@"Sex"];
-            accountModel.city = dataAccount[@"City"];
-            accountModel.distric = dataAccount[@"Distric"];
-            accountModel.fbID = dataAccount[@"fbID"];
-            accountModel.ssID = dataAccount[@"ssID"];
-            accountModel.latitude = [dataAccount[@"Latitude"] floatValue];
-            accountModel.longtitude = [dataAccount[@"Longtitude"] floatValue];
-            accountModel.distant = [dataAccount[@"Distant"] floatValue];
-            accountModel.fcm_token = dataAccount[@"fcm_token"];
-            
+            FPAccountModel *accountModel = [FPObjectMapper mapperFromAccountDictionary:responseObject[@"Data"]];
             [FPAccountManager insertAccountWithFPAccountModel:accountModel];
             
         } else {
@@ -147,21 +127,51 @@
 
 - (IBAction)onLoginWithFBButtonTapped:(UIButton *)sender {
     LogTrace(@"IN");
-//    FBSDKLoginManager *fbLogin = [[FBSDKLoginManager alloc] init];
-//    [fbLogin logInWithReadPermissions:@[@"public_profile"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-//        if (error) {
-//            
-//        } else if(result.isCancelled) {
-//        
-//        } else {
-//            NSLog(@"%@",result.token.tokenString);
-//        }
-//    }];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"FPLoginWithFacebookViewController"];
-    [self  presentViewController:vc animated:YES completion:nil];
+    FBSDKLoginManager *fbLogin = [[FBSDKLoginManager alloc] init];
+    if ([FBSDKAccessToken currentAccessToken]) {
+        
+    }
+    [fbLogin logInWithPublishPermissions:@[@"publish_actions"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+        LogTrace(@"Result: %@", result.token.userID);
+    }];
+    
     LogTrace(@"OUT");
 }
+
+- (void) loginWithFacebookAccount {
+    [SVProgressHUD showWithStatus:@"Đang đăng nhập"];
+    NSURL *URL = [NSURL URLWithString:@"http://api.5pet.vn/api/Login/Login"];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    NSDictionary *param = @{  @"username" : self.usernameTextField.text,
+                              @"password" : self.passwordTextField.text
+                              };
+    [manager POST:URL.absoluteString parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+        NSInteger susscess = [[responseObject objectForKey:@"Success"] integerValue];
+        if (susscess == 1) {
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            [appDelegate showHomeViewController];
+            [SVProgressHUD dismiss];
+            //Save account to Realm
+            FPAccountModel *accountModel = [FPObjectMapper mapperFromAccountDictionary:responseObject[@"Data"]];
+            [FPAccountManager insertAccountWithFPAccountModel:accountModel];
+            
+        } else {
+            [SVProgressHUD showErrorWithStatus:@"Sai mật khẩu hoặc password!"];
+        }
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        [SVProgressHUD showErrorWithStatus:@"Đăng nhập lỗi"];
+    }];
+
+}
+
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 
 /*
 #pragma mark - Navigation
