@@ -65,6 +65,8 @@
 		81F091911ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0918F1ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m */; };
 		81F091921ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F091901ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib */; };
 		81F091951ECC4EA500683336 /* FPConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091941ECC4EA500683336 /* FPConst.m */; };
+		A2D493581ECF445100B13EAA /* FPAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D493571ECF445100B13EAA /* FPAccountModel.m */; };
+		A2D4935B1ECF446800B13EAA /* FPPetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D4935A1ECF446800B13EAA /* FPPetModel.m */; };
 		CD195D837ADD66E5AEE8BFAC /* libPods-FindPet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +180,10 @@
 		81F091901ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPProfileCoupleTableViewCell.xib; sourceTree = "<group>"; };
 		81F091931ECC4EA500683336 /* FPConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPConst.h; sourceTree = "<group>"; };
 		81F091941ECC4EA500683336 /* FPConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPConst.m; sourceTree = "<group>"; };
+		A2D493561ECF445100B13EAA /* FPAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAccountModel.h; sourceTree = "<group>"; };
+		A2D493571ECF445100B13EAA /* FPAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAccountModel.m; sourceTree = "<group>"; };
+		A2D493591ECF446800B13EAA /* FPPetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPetModel.h; sourceTree = "<group>"; };
+		A2D4935A1ECF446800B13EAA /* FPPetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPetModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +323,7 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		811452371ECECD2F004D6BBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +333,8 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> origin/ToanNT
 		811452381ECECD3D004D6BBA /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,9 +364,12 @@
 		814AD6391EC9A2BB007FAEDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				81DDCA7E1ED5A05500AB30FD /* ObjectMapper */,
+=======
+				A2D493551ECF445100B13EAA /* Model */,
+>>>>>>> origin/ToanNT
 				811452381ECECD3D004D6BBA /* ModelManager */,
-				811452371ECECD2F004D6BBA /* Model */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -486,6 +498,17 @@
 				81F091901ECC3C2F00683336 /* FPProfileCoupleTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		A2D493551ECF445100B13EAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2D493561ECF445100B13EAA /* FPAccountModel.h */,
+				A2D493571ECF445100B13EAA /* FPAccountModel.m */,
+				A2D493591ECF446800B13EAA /* FPPetModel.h */,
+				A2D4935A1ECF446800B13EAA /* FPPetModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EEC38147312FC9D9E9BB8841 /* Pods */ = {
@@ -641,6 +664,7 @@
 			files = (
 				814AD6631EC9B9DF007FAEDF /* IQNSArray+Sort.m in Sources */,
 				81F091911ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m in Sources */,
+				A2D4935B1ECF446800B13EAA /* FPPetModel.m in Sources */,
 				81F091811ECC0A6D00683336 /* FPContactViewController.m in Sources */,
 				814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */,
 				53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */,
@@ -674,6 +698,7 @@
 				532BC9991E80EC59004CF413 /* FPListPetController.m in Sources */,
 				814AD66E1EC9B9DF007FAEDF /* IQTitleBarButtonItem.m in Sources */,
 				5354B2681E7FB96F00B7000F /* FPNewController.m in Sources */,
+				A2D493581ECF445100B13EAA /* FPAccountModel.m in Sources */,
 				814AD6651EC9B9DF007FAEDF /* IQUITextFieldView+Additions.m in Sources */,
 				81F0918C1ECC3BFD00683336 /* FPProfileSingleTableViewCell.m in Sources */,
 				5354B2751E7FDC9200B7000F /* FPNewCell.m in Sources */,
