@@ -36,7 +36,6 @@
 		53AEBFCC1E73E5970089E674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBFCB1E73E5970089E674 /* Assets.xcassets */; };
 		53AEBFCF1E73E5970089E674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBFCD1E73E5970089E674 /* LaunchScreen.storyboard */; };
 		53DA07211E7A6C240092563A /* FPLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DA07201E7A6C240092563A /* FPLoginController.m */; };
-		810A2E021ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810A2E011ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m */; };
 		8114523B1ECECD59004D6BBA /* FPAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8114523A1ECECD59004D6BBA /* FPAccountManager.m */; };
 		814AD6631EC9B9DF007FAEDF /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6411EC9B9DF007FAEDF /* IQNSArray+Sort.m */; };
 		814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6431EC9B9DF007FAEDF /* IQUIScrollView+Additions.m */; };
@@ -122,8 +121,6 @@
 		53DA071F1E7A6C240092563A /* FPLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLoginController.h; sourceTree = "<group>"; };
 		53DA07201E7A6C240092563A /* FPLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLoginController.m; sourceTree = "<group>"; };
 		5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FindPet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		810A2E001ECDB1510021CDE3 /* FPLoginWithFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLoginWithFacebookViewController.h; sourceTree = "<group>"; };
-		810A2E011ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLoginWithFacebookViewController.m; sourceTree = "<group>"; };
 		811452391ECECD59004D6BBA /* FPAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAccountManager.h; sourceTree = "<group>"; };
 		8114523A1ECECD59004D6BBA /* FPAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAccountManager.m; sourceTree = "<group>"; };
 		814AD6381EC9A258007FAEDF /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
@@ -243,8 +240,6 @@
 				532BC9981E80EC59004CF413 /* FPListPetController.m */,
 				532BC9A11E810A7E004CF413 /* FPScanBluetoothController.h */,
 				532BC9A21E810A7E004CF413 /* FPScanBluetoothController.m */,
-				810A2E001ECDB1510021CDE3 /* FPLoginWithFacebookViewController.h */,
-				810A2E011ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -633,7 +628,6 @@
 				A2D4935B1ECF446800B13EAA /* FPPetModel.m in Sources */,
 				81F091811ECC0A6D00683336 /* FPContactViewController.m in Sources */,
 				814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */,
-				810A2E021ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m in Sources */,
 				53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */,
 				814AD6681EC9B9DF007FAEDF /* IQUIWindow+Hierarchy.m in Sources */,
 				5354B26E1E7FB99A00B7000F /* FPTopShareController.m in Sources */,
