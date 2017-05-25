@@ -17,15 +17,10 @@
 		532BC9D11E811D83004CF413 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532BC9CD1E811D83004CF413 /* FBSDKCoreKit.framework */; };
 		532BC9D21E811D83004CF413 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532BC9CE1E811D83004CF413 /* FBSDKLoginKit.framework */; };
 		532BC9D31E811D83004CF413 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532BC9CF1E811D83004CF413 /* FBSDKShareKit.framework */; };
-		53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53417D911E73EC2F00AD2337 /* FPHomeController.m */; };
 		53417D941E73F99D00AD2337 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53417D931E73F99D00AD2337 /* UIKit.framework */; };
 		53417D961E7400EC00AD2337 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53417D951E7400EC00AD2337 /* CoreBluetooth.framework */; };
 		5354B2621E7F951500B7000F /* FPLeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2611E7F951500B7000F /* FPLeftMenuController.m */; };
 		5354B2651E7FA90400B7000F /* FPMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2641E7FA90400B7000F /* FPMenuCell.m */; };
-		5354B2681E7FB96F00B7000F /* FPNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2671E7FB96F00B7000F /* FPNewController.m */; };
-		5354B26B1E7FB98A00B7000F /* FPTopLikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B26A1E7FB98A00B7000F /* FPTopLikeController.m */; };
-		5354B26E1E7FB99A00B7000F /* FPTopShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B26D1E7FB99A00B7000F /* FPTopShareController.m */; };
-		5354B2711E7FBA3400B7000F /* FPPetStrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2701E7FBA3400B7000F /* FPPetStrayController.m */; };
 		5354B2751E7FDC9200B7000F /* FPNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B2741E7FDC9200B7000F /* FPNewCell.m */; };
 		53A775251E7D366F002F1437 /* FPSomeUsersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A775241E7D366F002F1437 /* FPSomeUsersController.m */; };
 		53A775281E7D36B6002F1437 /* FPBoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A775271E7D36B6002F1437 /* FPBoothController.m */; };
@@ -53,6 +48,11 @@
 		814AD6711EC9B9DF007FAEDF /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 814AD6621EC9B9DF007FAEDF /* IQKeyboardManager.bundle */; };
 		81BFA6B31ED68447007E69A5 /* FPLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFA6B21ED68447007E69A5 /* FPLoginController.m */; };
 		81BFA6B71ED6873D007E69A5 /* FPObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFA6B61ED6873D007E69A5 /* FPObjectMapper.m */; };
+		81BFA6C31ED6897F007E69A5 /* FPHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFA6BA1ED6897F007E69A5 /* FPHomeController.m */; };
+		81BFA6C41ED6897F007E69A5 /* FPNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFA6BC1ED6897F007E69A5 /* FPNewController.m */; };
+		81BFA6C51ED6897F007E69A5 /* FPPetStrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFA6BE1ED6897F007E69A5 /* FPPetStrayController.m */; };
+		81BFA6C61ED6897F007E69A5 /* FPTopLikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFA6C01ED6897F007E69A5 /* FPTopLikeController.m */; };
+		81BFA6C71ED6897F007E69A5 /* FPTopShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFA6C21ED6897F007E69A5 /* FPTopShareController.m */; };
 		81F091741ECBF91E00683336 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F091731ECBF91E00683336 /* Profile.storyboard */; };
 		81F091781ECBFCB600683336 /* FPProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091771ECBFCB600683336 /* FPProfileViewController.m */; };
 		81F0917B1ECC0A4D00683336 /* FPInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0917A1ECC0A4D00683336 /* FPInformationViewController.m */; };
@@ -85,8 +85,6 @@
 		532BC9CD1E811D83004CF413 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		532BC9CE1E811D83004CF413 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		532BC9CF1E811D83004CF413 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		53417D901E73EC2F00AD2337 /* FPHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPHomeController.h; sourceTree = "<group>"; };
-		53417D911E73EC2F00AD2337 /* FPHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPHomeController.m; sourceTree = "<group>"; };
 		53417D931E73F99D00AD2337 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53417D951E7400EC00AD2337 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		53417D971E7400FA00AD2337 /* FindPet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FindPet.entitlements; sourceTree = "<group>"; };
@@ -94,14 +92,6 @@
 		5354B2611E7F951500B7000F /* FPLeftMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLeftMenuController.m; sourceTree = "<group>"; };
 		5354B2631E7FA90400B7000F /* FPMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMenuCell.h; sourceTree = "<group>"; };
 		5354B2641E7FA90400B7000F /* FPMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMenuCell.m; sourceTree = "<group>"; };
-		5354B2661E7FB96F00B7000F /* FPNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNewController.h; sourceTree = "<group>"; };
-		5354B2671E7FB96F00B7000F /* FPNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNewController.m; sourceTree = "<group>"; };
-		5354B2691E7FB98A00B7000F /* FPTopLikeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTopLikeController.h; sourceTree = "<group>"; };
-		5354B26A1E7FB98A00B7000F /* FPTopLikeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTopLikeController.m; sourceTree = "<group>"; };
-		5354B26C1E7FB99A00B7000F /* FPTopShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTopShareController.h; sourceTree = "<group>"; };
-		5354B26D1E7FB99A00B7000F /* FPTopShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTopShareController.m; sourceTree = "<group>"; };
-		5354B26F1E7FBA3400B7000F /* FPPetStrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPetStrayController.h; sourceTree = "<group>"; };
-		5354B2701E7FBA3400B7000F /* FPPetStrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPetStrayController.m; sourceTree = "<group>"; };
 		5354B2721E7FD53E00B7000F /* FPConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPConstant.h; sourceTree = "<group>"; };
 		5354B2731E7FDC9200B7000F /* FPNewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNewCell.h; sourceTree = "<group>"; };
 		5354B2741E7FDC9200B7000F /* FPNewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNewCell.m; sourceTree = "<group>"; };
@@ -158,6 +148,16 @@
 		81BFA6B21ED68447007E69A5 /* FPLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLoginController.m; sourceTree = "<group>"; };
 		81BFA6B51ED6873D007E69A5 /* FPObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPObjectMapper.h; sourceTree = "<group>"; };
 		81BFA6B61ED6873D007E69A5 /* FPObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPObjectMapper.m; sourceTree = "<group>"; };
+		81BFA6B91ED6897F007E69A5 /* FPHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPHomeController.h; sourceTree = "<group>"; };
+		81BFA6BA1ED6897F007E69A5 /* FPHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPHomeController.m; sourceTree = "<group>"; };
+		81BFA6BB1ED6897F007E69A5 /* FPNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNewController.h; sourceTree = "<group>"; };
+		81BFA6BC1ED6897F007E69A5 /* FPNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNewController.m; sourceTree = "<group>"; };
+		81BFA6BD1ED6897F007E69A5 /* FPPetStrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPetStrayController.h; sourceTree = "<group>"; };
+		81BFA6BE1ED6897F007E69A5 /* FPPetStrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPetStrayController.m; sourceTree = "<group>"; };
+		81BFA6BF1ED6897F007E69A5 /* FPTopLikeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTopLikeController.h; sourceTree = "<group>"; };
+		81BFA6C01ED6897F007E69A5 /* FPTopLikeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTopLikeController.m; sourceTree = "<group>"; };
+		81BFA6C11ED6897F007E69A5 /* FPTopShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTopShareController.h; sourceTree = "<group>"; };
+		81BFA6C21ED6897F007E69A5 /* FPTopShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTopShareController.m; sourceTree = "<group>"; };
 		81F091731ECBF91E00683336 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		81F091761ECBFCB600683336 /* FPProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPProfileViewController.h; sourceTree = "<group>"; };
 		81F091771ECBFCB600683336 /* FPProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPProfileViewController.m; sourceTree = "<group>"; };
@@ -218,10 +218,9 @@
 		53417D8B1E73EB6100AD2337 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				81BFA6B81ED6897F007E69A5 /* Home */,
 				81BFA6B01ED68447007E69A5 /* Login */,
 				81F091751ECBFC8400683336 /* Profile */,
-				53417D901E73EC2F00AD2337 /* FPHomeController.h */,
-				53417D911E73EC2F00AD2337 /* FPHomeController.m */,
 				53A775231E7D366F002F1437 /* FPSomeUsersController.h */,
 				53A775241E7D366F002F1437 /* FPSomeUsersController.m */,
 				53A775261E7D36B6002F1437 /* FPBoothController.h */,
@@ -230,14 +229,6 @@
 				53A7752A1E7D36C4002F1437 /* FPMyPetsController.m */,
 				5354B2601E7F951500B7000F /* FPLeftMenuController.h */,
 				5354B2611E7F951500B7000F /* FPLeftMenuController.m */,
-				5354B2661E7FB96F00B7000F /* FPNewController.h */,
-				5354B2671E7FB96F00B7000F /* FPNewController.m */,
-				5354B2691E7FB98A00B7000F /* FPTopLikeController.h */,
-				5354B26A1E7FB98A00B7000F /* FPTopLikeController.m */,
-				5354B26C1E7FB99A00B7000F /* FPTopShareController.h */,
-				5354B26D1E7FB99A00B7000F /* FPTopShareController.m */,
-				5354B26F1E7FBA3400B7000F /* FPPetStrayController.h */,
-				5354B2701E7FBA3400B7000F /* FPPetStrayController.m */,
 				532BC9971E80EC59004CF413 /* FPListPetController.h */,
 				532BC9981E80EC59004CF413 /* FPListPetController.m */,
 				532BC9A11E810A7E004CF413 /* FPScanBluetoothController.h */,
@@ -451,6 +442,23 @@
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
+		81BFA6B81ED6897F007E69A5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				81BFA6B91ED6897F007E69A5 /* FPHomeController.h */,
+				81BFA6BA1ED6897F007E69A5 /* FPHomeController.m */,
+				81BFA6BB1ED6897F007E69A5 /* FPNewController.h */,
+				81BFA6BC1ED6897F007E69A5 /* FPNewController.m */,
+				81BFA6BD1ED6897F007E69A5 /* FPPetStrayController.h */,
+				81BFA6BE1ED6897F007E69A5 /* FPPetStrayController.m */,
+				81BFA6BF1ED6897F007E69A5 /* FPTopLikeController.h */,
+				81BFA6C01ED6897F007E69A5 /* FPTopLikeController.m */,
+				81BFA6C11ED6897F007E69A5 /* FPTopShareController.h */,
+				81BFA6C21ED6897F007E69A5 /* FPTopShareController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		81F091751ECBFC8400683336 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,16 +652,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81BFA6C31ED6897F007E69A5 /* FPHomeController.m in Sources */,
 				814AD6631EC9B9DF007FAEDF /* IQNSArray+Sort.m in Sources */,
 				81F091911ECC3C2F00683336 /* FPProfileCoupleTableViewCell.m in Sources */,
 				A2D4935B1ECF446800B13EAA /* FPPetModel.m in Sources */,
 				81F091811ECC0A6D00683336 /* FPContactViewController.m in Sources */,
 				814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */,
-				53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */,
 				814AD6681EC9B9DF007FAEDF /* IQUIWindow+Hierarchy.m in Sources */,
-				5354B26E1E7FB99A00B7000F /* FPTopShareController.m in Sources */,
 				814AD6691EC9B9DF007FAEDF /* IQKeyboardManager.m in Sources */,
+				81BFA6C41ED6897F007E69A5 /* FPNewController.m in Sources */,
 				814AD6671EC9B9DF007FAEDF /* IQUIViewController+Additions.m in Sources */,
+				81BFA6C61ED6897F007E69A5 /* FPTopLikeController.m in Sources */,
 				814AD66B1EC9B9DF007FAEDF /* IQTextView.m in Sources */,
 				814AD66A1EC9B9DF007FAEDF /* IQKeyboardReturnKeyHandler.m in Sources */,
 				81F0917B1ECC0A4D00683336 /* FPInformationViewController.m in Sources */,
@@ -666,19 +675,17 @@
 				814AD66D1EC9B9DF007FAEDF /* IQPreviousNextView.m in Sources */,
 				81F091781ECBFCB600683336 /* FPProfileViewController.m in Sources */,
 				53A775281E7D36B6002F1437 /* FPBoothController.m in Sources */,
+				81BFA6C51ED6897F007E69A5 /* FPPetStrayController.m in Sources */,
 				53A775251E7D366F002F1437 /* FPSomeUsersController.m in Sources */,
 				8114523B1ECECD59004D6BBA /* FPAccountManager.m in Sources */,
 				53AEBFC41E73E5970089E674 /* AppDelegate.m in Sources */,
 				81BFA6B31ED68447007E69A5 /* FPLoginController.m in Sources */,
 				814AD6701EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m in Sources */,
-				5354B2711E7FBA3400B7000F /* FPPetStrayController.m in Sources */,
 				814AD6661EC9B9DF007FAEDF /* IQUIView+Hierarchy.m in Sources */,
-				5354B26B1E7FB98A00B7000F /* FPTopLikeController.m in Sources */,
 				53AEBFC11E73E5970089E674 /* main.m in Sources */,
 				814AD66C1EC9B9DF007FAEDF /* IQBarButtonItem.m in Sources */,
 				532BC9991E80EC59004CF413 /* FPListPetController.m in Sources */,
 				814AD66E1EC9B9DF007FAEDF /* IQTitleBarButtonItem.m in Sources */,
-				5354B2681E7FB96F00B7000F /* FPNewController.m in Sources */,
 				A2D493581ECF445100B13EAA /* FPAccountModel.m in Sources */,
 				814AD6651EC9B9DF007FAEDF /* IQUITextFieldView+Additions.m in Sources */,
 				81BFA6B71ED6873D007E69A5 /* FPObjectMapper.m in Sources */,
@@ -687,6 +694,7 @@
 				81F091841ECC297900683336 /* FPProfileContainerViewController.m in Sources */,
 				5354B2651E7FA90400B7000F /* FPMenuCell.m in Sources */,
 				814AD66F1EC9B9DF007FAEDF /* IQToolbar.m in Sources */,
+				81BFA6C71ED6897F007E69A5 /* FPTopShareController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
