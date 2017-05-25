@@ -147,19 +147,10 @@
 
 - (IBAction)onLoginWithFBButtonTapped:(UIButton *)sender {
     LogTrace(@"IN");
-//    FBSDKLoginManager *fbLogin = [[FBSDKLoginManager alloc] init];
-//    [fbLogin logInWithReadPermissions:@[@"public_profile"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-//        if (error) {
-//            
-//        } else if(result.isCancelled) {
-//        
-//        } else {
-//            NSLog(@"%@",result.token.tokenString);
-//        }
-//    }];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"FPLoginWithFacebookViewController"];
-    [self  presentViewController:vc animated:YES completion:nil];
+    FBSDKLoginManager *fbLogin = [[FBSDKLoginManager alloc] init];
+    [fbLogin logInWithPublishPermissions:@[@"publish_actions"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+        LogTrace(@"Result: %@", result.token.userID);
+    }];
     LogTrace(@"OUT");
 }
 
