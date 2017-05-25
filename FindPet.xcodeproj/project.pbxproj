@@ -36,7 +36,6 @@
 		53AEBFCC1E73E5970089E674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBFCB1E73E5970089E674 /* Assets.xcassets */; };
 		53AEBFCF1E73E5970089E674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBFCD1E73E5970089E674 /* LaunchScreen.storyboard */; };
 		53DA07211E7A6C240092563A /* FPLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DA07201E7A6C240092563A /* FPLoginController.m */; };
-		810A2E021ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810A2E011ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m */; };
 		8114523B1ECECD59004D6BBA /* FPAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8114523A1ECECD59004D6BBA /* FPAccountManager.m */; };
 		814AD6631EC9B9DF007FAEDF /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6411EC9B9DF007FAEDF /* IQNSArray+Sort.m */; };
 		814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6431EC9B9DF007FAEDF /* IQUIScrollView+Additions.m */; };
@@ -53,6 +52,8 @@
 		814AD66F1EC9B9DF007FAEDF /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD65E1EC9B9DF007FAEDF /* IQToolbar.m */; };
 		814AD6701EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 814AD6601EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m */; };
 		814AD6711EC9B9DF007FAEDF /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 814AD6621EC9B9DF007FAEDF /* IQKeyboardManager.bundle */; };
+		81DDCA7D1ED5A03A00AB30FD /* FPAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DDCA7C1ED5A03A00AB30FD /* FPAccountModel.m */; };
+		81DDCA811ED5A08B00AB30FD /* FPObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DDCA801ED5A08B00AB30FD /* FPObjectMapper.m */; };
 		81F091741ECBF91E00683336 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F091731ECBF91E00683336 /* Profile.storyboard */; };
 		81F091781ECBFCB600683336 /* FPProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F091771ECBFCB600683336 /* FPProfileViewController.m */; };
 		81F0917B1ECC0A4D00683336 /* FPInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0917A1ECC0A4D00683336 /* FPInformationViewController.m */; };
@@ -119,11 +120,9 @@
 		53AEBFCB1E73E5970089E674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53AEBFCE1E73E5970089E674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53AEBFD01E73E5970089E674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53DA071F1E7A6C240092563A /* FPLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLoginController.h; sourceTree = "<group>"; };
-		53DA07201E7A6C240092563A /* FPLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLoginController.m; sourceTree = "<group>"; };
+		53DA071F1E7A6C240092563A /* FPLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPLoginController.h; path = ../FPLoginController.h; sourceTree = "<group>"; };
+		53DA07201E7A6C240092563A /* FPLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPLoginController.m; path = ../FPLoginController.m; sourceTree = "<group>"; };
 		5AB4CE427C4843C78FFED269 /* libPods-FindPet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FindPet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		810A2E001ECDB1510021CDE3 /* FPLoginWithFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLoginWithFacebookViewController.h; sourceTree = "<group>"; };
-		810A2E011ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLoginWithFacebookViewController.m; sourceTree = "<group>"; };
 		811452391ECECD59004D6BBA /* FPAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAccountManager.h; sourceTree = "<group>"; };
 		8114523A1ECECD59004D6BBA /* FPAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAccountManager.m; sourceTree = "<group>"; };
 		814AD6381EC9A258007FAEDF /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
@@ -158,6 +157,10 @@
 		814AD65F1EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
 		814AD6601EC9B9DF007FAEDF /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		814AD6621EC9B9DF007FAEDF /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		81DDCA7B1ED5A03A00AB30FD /* FPAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAccountModel.h; sourceTree = "<group>"; };
+		81DDCA7C1ED5A03A00AB30FD /* FPAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAccountModel.m; sourceTree = "<group>"; };
+		81DDCA7F1ED5A08B00AB30FD /* FPObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPObjectMapper.h; sourceTree = "<group>"; };
+		81DDCA801ED5A08B00AB30FD /* FPObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPObjectMapper.m; sourceTree = "<group>"; };
 		81F091731ECBF91E00683336 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		81F091761ECBFCB600683336 /* FPProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPProfileViewController.h; sourceTree = "<group>"; };
 		81F091771ECBFCB600683336 /* FPProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPProfileViewController.m; sourceTree = "<group>"; };
@@ -218,11 +221,10 @@
 		53417D8B1E73EB6100AD2337 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				81280FBD1ED418CB00325192 /* Login */,
 				81F091751ECBFC8400683336 /* Profile */,
 				53417D901E73EC2F00AD2337 /* FPHomeController.h */,
 				53417D911E73EC2F00AD2337 /* FPHomeController.m */,
-				53DA071F1E7A6C240092563A /* FPLoginController.h */,
-				53DA07201E7A6C240092563A /* FPLoginController.m */,
 				53A775231E7D366F002F1437 /* FPSomeUsersController.h */,
 				53A775241E7D366F002F1437 /* FPSomeUsersController.m */,
 				53A775261E7D36B6002F1437 /* FPBoothController.h */,
@@ -243,8 +245,6 @@
 				532BC9981E80EC59004CF413 /* FPListPetController.m */,
 				532BC9A11E810A7E004CF413 /* FPScanBluetoothController.h */,
 				532BC9A21E810A7E004CF413 /* FPScanBluetoothController.m */,
-				810A2E001ECDB1510021CDE3 /* FPLoginWithFacebookViewController.h */,
-				810A2E011ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -323,6 +323,18 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+		811452371ECECD2F004D6BBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81DDCA7B1ED5A03A00AB30FD /* FPAccountModel.h */,
+				81DDCA7C1ED5A03A00AB30FD /* FPAccountModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+=======
+>>>>>>> origin/ToanNT
 		811452381ECECD3D004D6BBA /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +342,15 @@
 				8114523A1ECECD59004D6BBA /* FPAccountManager.m */,
 			);
 			path = ModelManager;
+			sourceTree = "<group>";
+		};
+		81280FBD1ED418CB00325192 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				53DA071F1E7A6C240092563A /* FPLoginController.h */,
+				53DA07201E7A6C240092563A /* FPLoginController.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		814AD6371EC9A23D007FAEDF /* DebugLog */ = {
@@ -343,7 +364,11 @@
 		814AD6391EC9A2BB007FAEDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				81DDCA7E1ED5A05500AB30FD /* ObjectMapper */,
+=======
 				A2D493551ECF445100B13EAA /* Model */,
+>>>>>>> origin/ToanNT
 				811452381ECECD3D004D6BBA /* ModelManager */,
 			);
 			path = Model;
@@ -435,6 +460,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		81DDCA7E1ED5A05500AB30FD /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				81DDCA7F1ED5A08B00AB30FD /* FPObjectMapper.h */,
+				81DDCA801ED5A08B00AB30FD /* FPObjectMapper.m */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
 		81F091751ECBFC8400683336 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,7 +555,7 @@
 				TargetAttributes = {
 					53AEBFBB1E73E5970089E674 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = AHB7MKP9EC;
+						DevelopmentTeam = 3U8EZZRDWZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -633,7 +667,6 @@
 				A2D4935B1ECF446800B13EAA /* FPPetModel.m in Sources */,
 				81F091811ECC0A6D00683336 /* FPContactViewController.m in Sources */,
 				814AD6641EC9B9DF007FAEDF /* IQUIScrollView+Additions.m in Sources */,
-				810A2E021ECDB1510021CDE3 /* FPLoginWithFacebookViewController.m in Sources */,
 				53417D921E73EC2F00AD2337 /* FPHomeController.m in Sources */,
 				814AD6681EC9B9DF007FAEDF /* IQUIWindow+Hierarchy.m in Sources */,
 				5354B26E1E7FB99A00B7000F /* FPTopShareController.m in Sources */,
@@ -642,6 +675,7 @@
 				814AD66B1EC9B9DF007FAEDF /* IQTextView.m in Sources */,
 				814AD66A1EC9B9DF007FAEDF /* IQKeyboardReturnKeyHandler.m in Sources */,
 				81F0917B1ECC0A4D00683336 /* FPInformationViewController.m in Sources */,
+				81DDCA7D1ED5A03A00AB30FD /* FPAccountModel.m in Sources */,
 				53A7752B1E7D36C4002F1437 /* FPMyPetsController.m in Sources */,
 				53DA07211E7A6C240092563A /* FPLoginController.m in Sources */,
 				532BC9A31E810A7E004CF413 /* FPScanBluetoothController.m in Sources */,
@@ -671,6 +705,7 @@
 				81F091841ECC297900683336 /* FPProfileContainerViewController.m in Sources */,
 				5354B2651E7FA90400B7000F /* FPMenuCell.m in Sources */,
 				814AD66F1EC9B9DF007FAEDF /* IQToolbar.m in Sources */,
+				81DDCA811ED5A08B00AB30FD /* FPObjectMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,7 +825,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AHB7MKP9EC;
+				DEVELOPMENT_TEAM = 3U8EZZRDWZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -799,7 +834,7 @@
 				INFOPLIST_FILE = FindPet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet.tes;
+				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -812,7 +847,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AHB7MKP9EC;
+				DEVELOPMENT_TEAM = 3U8EZZRDWZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -821,7 +856,7 @@
 				INFOPLIST_FILE = FindPet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet.tes;
+				PRODUCT_BUNDLE_IDENTIFIER = net.citigo.FindPet.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
