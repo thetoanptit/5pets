@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FPAccountModel.h"
 
 @interface FPObjectMapper : NSObject
+
++ (FPAccountModel *)mappingAccountModelFromAccountDic:(NSDictionary *) accountDic;
 
 @end
