@@ -98,25 +98,25 @@
     NSDictionary *param = @{  @"username" : self.usernameTextField.text,
                               @"password" : self.passwordTextField.text
                               };
-    [manager POST:URL.absoluteString parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
-        NSInteger susscess = [[responseObject objectForKey:@"Success"] integerValue];
-        if (susscess == 1) {
+//    [manager POST:URL.absoluteString parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+//        NSLog(@"JSON: %@", responseObject);
+//        NSInteger susscess = [[responseObject objectForKey:@"Success"] integerValue];
+//        if (susscess == 1) {
             AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
             [appDelegate showHomeViewController];
             [SVProgressHUD dismiss];
-            //Save account to Realm
-            FPAccountModel *accountModel = [FPObjectMapper mappingAccountModelFromAccountDic:responseObject[@"Data"]];
-            [FPAccountManager insertAccountWithFPAccountModel:accountModel];
-            
-        } else {
-            [SVProgressHUD showErrorWithStatus:@"Sai mật khẩu hoặc password!"];
-        }
-        
-    } failure:^(NSURLSessionTask *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-        [SVProgressHUD showErrorWithStatus:@"Đăng nhập lỗi"];
-    }];
+//            //Save account to Realm
+//            FPAccountModel *accountModel = [FPObjectMapper mappingAccountModelFromAccountDic:responseObject[@"Data"]];
+//            [FPAccountManager insertAccountWithFPAccountModel:accountModel];
+//            
+//        } else {
+//            [SVProgressHUD showErrorWithStatus:@"Sai mật khẩu hoặc password!"];
+//        }
+//        
+//    } failure:^(NSURLSessionTask *operation, NSError *error) {
+//        NSLog(@"Error: %@", error);
+//        [SVProgressHUD showErrorWithStatus:@"Đăng nhập lỗi"];
+//    }];
     
     LogTrace(@"OUT");
 }
@@ -162,9 +162,7 @@
         NSLog(@"Error: %@", error);
         [SVProgressHUD showErrorWithStatus:@"Đăng nhập lỗi"];
     }];
-    
-    
-    
+
 }
 
 @end
