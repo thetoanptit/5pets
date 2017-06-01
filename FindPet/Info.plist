@@ -31,6 +31,8 @@
 	<string>1382802485071581</string>
 	<key>FacebookDisplayName</key>
 	<string>5Pet</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
