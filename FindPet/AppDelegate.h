@@ -17,5 +17,6 @@
 @property (nonatomic, strong) UIStoryboard *mainStoryBoard;
 
 - (void) showHomeViewController;
+- (void) logoutApplication;
 @end
 
