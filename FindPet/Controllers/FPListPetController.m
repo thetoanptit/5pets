@@ -28,12 +28,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.tabBarController.tabBar.hidden = NO;
 }
 
 - (void)configUI {
     LogTrace(@"IN");
     self.title = @"Danh sách PET";
+    self.tabBarController.tabBar.hidden = YES;
     
     [self.tableView registerNib:[UINib nibWithNibName:kFPPetCellIdentifier bundle:nil] forCellReuseIdentifier:kFPPetCellIdentifier];
     LogTrace(@"OUT");

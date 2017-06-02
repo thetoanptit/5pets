@@ -7,12 +7,19 @@
 //
 
 #import "FPProfileViewController.h"
-
+#import "Logging.h"
 
 @interface FPProfileViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imgPet;
 @property (weak, nonatomic) IBOutlet UIImageView *imgOwner;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIButton *btnFindPet;
+@property (weak, nonatomic) IBOutlet UIButton *btnFindPet1;
+@property (weak, nonatomic) IBOutlet UIButton *btnPetLocation;
+@property (weak, nonatomic) IBOutlet UIButton *btnPetLocation1;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnEditProfile;
+@property (weak, nonatomic) IBOutlet UIButton *btnDoneProfile;
 
 @end
 
@@ -20,11 +27,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    LogTrace(@"IN");
     [self.navigationController setNavigationBarHidden:YES];
-    self.tabBarController.tabBar.hidden = YES;
+    self.btnDoneProfile.hidden = YES;
     
-
-    
+    LogTrace(@"OUT");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +41,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    LogTrace(@"IN");
     [self.view layoutIfNeeded];
     self.imgPet.layer.cornerRadius = self.imgPet.frame.size.width/2;
     self.imgPet.layer.masksToBounds = YES;
@@ -45,8 +52,51 @@
     self.imgOwner.layer.masksToBounds = YES;
     self.imgOwner.layer.borderWidth = 2.0;
     self.imgOwner.layer.borderColor = [UIColor clearColor].CGColor;
+    LogTrace(@"OUT");
 }
 
 
+- (IBAction)btnBack_Clicked:(UIButton *)sender {
+    LogTrace(@"IN");
+    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController setNavigationBarHidden:NO];
+    LogTrace(@"OUT");
+}
+
+- (IBAction)btnPetLocation_Clicked:(UIButton *)sender {
+    LogTrace(@"IN");
+    LogTrace(@"OUT");
+}
+- (IBAction)btnFindPet:(id)sender {
+    LogTrace(@"IN");
+    LogTrace(@"OUT");
+}
+
+
+- (IBAction)editProfile:(id)sender {
+    LogTrace(@"IN");
+    [self setHiddenButtonWithStatus:YES];
+    
+    LogTrace(@"OUT");
+}
+
+- (IBAction)btnDoneProfile_Clicked:(UIButton *)sender {
+    LogTrace(@"IN");
+    [self setHiddenButtonWithStatus:NO];
+    
+    LogTrace(@"OUT");
+}
+
+- (void) setHiddenButtonWithStatus:(BOOL)isHidden {
+    LogTrace(@"IN");
+    self.btnFindPet.hidden = isHidden;
+    self.btnFindPet1.hidden = isHidden;
+    self.btnPetLocation.hidden = isHidden;
+    self.btnPetLocation1.hidden = isHidden;
+    self.btnEditProfile.hidden = isHidden;
+    self.btnDoneProfile.hidden = !isHidden;
+    
+    LogTrace(@"OUT");
+}
 
 @end
