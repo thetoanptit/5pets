@@ -16,6 +16,7 @@
 #import "FPConstant.h"
 #import "FPAccountManager.h"
 #import "FPAccountModel.h"
+#import "AppDelegate.h"
 #import <MMDrawerController/UIViewController+MMDrawerController.h>
 
 @interface FPLeftMenuController ()<UITableViewDataSource, UITableViewDelegate>
@@ -124,19 +125,21 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
+    switch (indexPath.row) {
+        case 6:{
+            [self.mm_drawerController closeDrawerAnimated:NO completion:nil];
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            [cell setSelected:NO];
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            [appDelegate logoutApplication];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
