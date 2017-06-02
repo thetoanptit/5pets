@@ -68,8 +68,8 @@
         }
         case FPCellProfileInformationBred:{
             FPProfileSingleTableViewCell *cell = (FPProfileSingleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([FPProfileSingleTableViewCell class])];
-            cell.lblTitle.text = @"Loài";
-            cell.lblDetail.text = @"Chó";
+            cell.lblTitle.text = @"Giống";
+            cell.lblDetail.text = @"Bắc kinh lai";
             return cell;
         }
         case FPCellProfileInformationParents: {
@@ -82,30 +82,30 @@
         }
         case FPCellProfileInformationGender: {
             FPProfileSingleTableViewCell *cell = (FPProfileSingleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([FPProfileSingleTableViewCell class])];
-            cell.lblTitle.text = @"Loài";
-            cell.lblDetail.text = @"Chó";
+            cell.lblTitle.text = @"Giới tính";
+            cell.lblDetail.text = @"Đực";
             return cell;
         }
         case FPCellProfileInformationBirth: {
             FPProfileCoupleTableViewCell *cell = (FPProfileCoupleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([FPProfileCoupleTableViewCell class])];
-            cell.lblTitle1.text = @"Cha";
-            cell.lblTitle2.text = @"Mẹ";
-            cell.lblDetail1.text = @"Bắc Kinh";
-            cell.lblDetail2.text = @"Nhật lông dài";
+            cell.lblTitle1.text = @"Ngày sinh";
+            cell.lblTitle2.text = @"Tuổi";
+            cell.lblDetail1.text = @"2/9/2016";
+            cell.lblDetail2.text = @"8 tháng";
             return cell;
         }
         case FPCellProfileInformationCoatColor: {
             FPProfileSingleTableViewCell *cell = (FPProfileSingleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([FPProfileSingleTableViewCell class])];
-            cell.lblTitle.text = @"Loài";
-            cell.lblDetail.text = @"Chó";
+            cell.lblTitle.text = @"Màu";
+            cell.lblDetail.text = @"Vàng rơm";
             return cell;
         }
         default: {
             FPProfileCoupleTableViewCell *cell = (FPProfileCoupleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([FPProfileCoupleTableViewCell class])];
-            cell.lblTitle1.text = @"Cha";
-            cell.lblTitle2.text = @"Mẹ";
-            cell.lblDetail1.text = @"Bắc Kinh";
-            cell.lblDetail2.text = @"Nhật lông dài";
+            cell.lblTitle1.text = @"Tiêm phòng";
+            cell.lblTitle2.text = @"Ngày tiêm";
+            cell.lblDetail1.text = @"Vắc xin AAA";
+            cell.lblDetail2.text = @"1/1/2017";
             return cell;
         }
     }
@@ -119,14 +119,5 @@
     return 0.00001f;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

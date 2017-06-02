@@ -18,7 +18,25 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+    if (selected) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Nhập thông tin:" message:@"Vui lòng điền thêm thông tin" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            textField.placeholder = self.lblTitle.text;
+        }];
+
+        UIAlertAction *buttonCancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alert addAction:buttonCancel];
+        
+        UIAlertAction *buttonOK = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            self.lblDetail.text = [alert.textFields objectAtIndex:0].text;
+        }];
+        [alert addAction:buttonOK];
+        
+        [self.window.rootViewController showViewController:alert sender:nil];
+        
+    }
 }
 
 @end
